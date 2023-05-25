@@ -1,45 +1,42 @@
 import { Grid, Typography } from "@mui/material";
 import images from "../data/images.json";
+import heroText from "../data/text.json";
 import LinkButton from "./LinkButton";
 
+const { title, subtitle } = heroText.home.hero;
+const titleBreakingPointString = "best";
+const subtitleBreakingPointString1 = ",";
+const subtitleBreakingPointString2 = "businesses";
+const titleTextToArray = title.split(titleBreakingPointString);
+const subtitleTextToArray1 = subtitle.split(subtitleBreakingPointString1);
+const subtitleTextToArray2 = subtitleTextToArray1[1].split(
+  subtitleBreakingPointString2
+);
 const heroImage = images.heros.hero1;
 
 const Hero = () => {
+  const updatedTitle = (
+    <Typography variant="h1" fontWeight="bold" color="header">
+      {titleTextToArray[0] + " " + titleBreakingPointString}
+      <br />
+      {titleTextToArray[1]}
+    </Typography>
+  );
+
+  const updatedSubtitle = (
+    <Typography variant="body2" color="body">
+      {subtitleTextToArray1[0] + subtitleBreakingPointString1} <br />{" "}
+      {subtitleTextToArray2[0] + " " + subtitleBreakingPointString2} <br />{" "}
+      {subtitleTextToArray2[1]}
+    </Typography>
+  );
+
   return (
-    // <Box sx={{ width: "100%" }}>
-    //   <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-    //     <Grid item xs={6}>
-    //       <Box pl="22px">
-    //         <Box>
-    //           <Typography variant="h1" color="header">
-    //             Transform your business operations with the best fiber solution
-    //           </Typography>
-    //         </Box>
-    //         <Box>
-    //           <Typography variant="body2" color="body">
-    //             We are proud to be at the forefront of the telecommunications
-    //             industry, providing high-quality fiber optic solutions to homes
-    //             and businesses across the country.
-    //           </Typography>
-    //         </Box>
-    //         <Box>
-    //           <LinkButton to="/contact" text="Contact Us" />
-    //         </Box>
-    //       </Box>
-    //     </Grid>
-    //     <Grid item xs={6}>
-    //       <Box>
-    //         <img src={heroImage} alt="hero" />
-    //       </Box>
-    //     </Grid>
-    //   </Grid>
-    // </Box>
     <Grid
       container
       sx={{
         pl: "80px",
         pt: "80px",
-        background: "linear-gradient(to bottom, #EAF1FF, #FFFEFA)",
       }}
     >
       {/* Left Part */}
@@ -51,19 +48,10 @@ const Hero = () => {
           spacing={3}
           sx={{ height: "100%", pl: "30px" }}
         >
-          <Grid item>
-            <Typography variant="h1" fontWeight="bold" color="header">
-              Transform your business operations with the best <br />
-              fiber solution
-            </Typography>
-          </Grid>
+          <Grid item>{updatedTitle}</Grid>
           <Grid item>
             <Typography variant="body2" color="body">
-              We are proud to be at the forefront of the telecommunications
-              industry, <br />
-              providing high-quality fiber optic solutions to homes and
-              businesses <br />
-              across the country.
+              {updatedSubtitle}
             </Typography>
           </Grid>
           <Grid item>
@@ -74,12 +62,7 @@ const Hero = () => {
 
       {/* Right Part */}
       <Grid item xs={12} md={6} sx={{ pt: "100px" }}>
-        <Grid
-          container
-          justifyContent="flex-end"
-          alignItems="flex-end"
-          //   sx={{ mt: "50px" }}
-        >
+        <Grid container justifyContent="flex-end" alignItems="flex-end">
           <img
             src={heroImage}
             alt="Hero"
