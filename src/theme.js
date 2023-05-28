@@ -18,36 +18,40 @@ export const theme = createTheme({
   typography: {
     fontFamily: "Red Hat Display, sans-serif",
     h1: {
-      //   fontSize: "56px",
-      fontSize: "58px",
+      fontSize: "56px",
       lineHeight: "68px",
       fontWeight: 700,
+      color: "#101828",
     },
     h2: {
       fontSize: "48px",
       lineHeight: "54px",
       fontWeight: 700,
+      color: "#101828",
     },
     h3: {
       fontSize: "36px",
       lineHeight: "44px",
       fontWeight: 700,
+      color: "#101828",
     },
     body1: {
       fontSize: "20px",
-      lineHeight: "170%",
+      lineHeight: "34px",
       fontWeight: 400,
+      color: "#475467B2",
     },
     body2: {
-      //   fontSize: "18px",
-      fontSize: "20px",
+      fontSize: "18px",
       lineHeight: "27px",
       fontWeight: 400,
+      color: "#475467B2",
     },
     body3: {
       fontSize: "16px",
-      lineHeight: "170%",
+      lineHeight: "27px",
       fontWeight: 400,
+      color: "#475467B2",
     },
     button: {
       fontSize: "16px",

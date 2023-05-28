@@ -1,41 +1,18 @@
 import { Grid, Typography } from "@mui/material";
 import images from "../data/images.json";
 import heroText from "../data/text.json";
+import { theme } from "../theme";
 import LinkButton from "./LinkButton";
 
 const { title, subtitle } = heroText.home.hero;
-const titleBreakingPointString = "best";
-const subtitleBreakingPointString1 = ",";
-const subtitleBreakingPointString2 = "businesses";
-const titleTextToArray = title.split(titleBreakingPointString);
-const subtitleTextToArray1 = subtitle.split(subtitleBreakingPointString1);
-const subtitleTextToArray2 = subtitleTextToArray1[1].split(
-  subtitleBreakingPointString2
-);
 const heroImage = images.heros.hero1;
 
 const Hero = () => {
-  const updatedTitle = (
-    <Typography variant="h1" fontWeight="bold" color="header">
-      {titleTextToArray[0] + " " + titleBreakingPointString}
-      <br />
-      {titleTextToArray[1]}
-    </Typography>
-  );
-
-  const updatedSubtitle = (
-    <Typography variant="body2" color="body">
-      {subtitleTextToArray1[0] + subtitleBreakingPointString1} <br />{" "}
-      {subtitleTextToArray2[0] + " " + subtitleBreakingPointString2} <br />{" "}
-      {subtitleTextToArray2[1]}
-    </Typography>
-  );
-
   return (
     <Grid
       container
       sx={{
-        pl: "80px",
+        pl: "120px",
         pt: "80px",
       }}
     >
@@ -46,16 +23,33 @@ const Hero = () => {
           direction="column"
           alignItems="flex-start"
           spacing={3}
-          sx={{ height: "100%", pl: "30px" }}
+          sx={{ height: "100%" }}
         >
-          <Grid item>{updatedTitle}</Grid>
           <Grid item>
-            <Typography variant="body2" color="body">
-              {updatedSubtitle}
+            <Typography variant="h1" width="694px" height="204px">
+              {title}
+            </Typography>
+          </Grid>
+
+          <Grid item>
+            <Typography variant="body2" width="578px" height="81px">
+              {subtitle}
             </Typography>
           </Grid>
           <Grid item>
-            <LinkButton to="/contact" text="Contact Us" />
+            <LinkButton
+              to="/contact"
+              text="Contact Us"
+              sx={{
+                width: "188px",
+                height: "45px",
+                borderRadius: "4px",
+                fontSize: theme.typography.button.fontSize,
+                fontWeight: theme.typography.button.fontWeight,
+                textTransform: "capitalize",
+                padding: "12px 10px",
+              }}
+            />
           </Grid>
         </Grid>
       </Grid>

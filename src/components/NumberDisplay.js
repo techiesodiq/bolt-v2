@@ -1,4 +1,8 @@
 import { Paper, Stack, styled } from "@mui/material";
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
+
+const COUNTER_DURATION = 4;
 
 const NumberDisplay = ({ number }) => {
   const digits = Array.from(String(number), Number);
@@ -23,7 +27,15 @@ const NumberDisplay = ({ number }) => {
   return (
     <Stack direction="row" spacing={2}>
       {digits.map((digit, index) => (
-        <Item key={index}>{digit}</Item>
+        <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+          {({ isVisible }) => (
+            <Item key={index}>
+              {isVisible ? (
+                <CountUp end={digit} duration={COUNTER_DURATION} />
+              ) : null}
+            </Item>
+          )}
+        </VisibilitySensor>
       ))}
     </Stack>
   );

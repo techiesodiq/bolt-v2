@@ -11,7 +11,7 @@ const Counter = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "60px",
+        py: "60px",
       }}
     >
       <Box sx={{ display: "flex", flexDirection: "column" }}>

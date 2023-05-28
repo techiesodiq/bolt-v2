@@ -1,6 +1,8 @@
 import { Box } from "@mui/system";
 import Counter from "../components/Counter";
 import Hero from "../components/Hero";
+import HomeContact from "../components/HomeContact";
+import HomeSafety from "../components/HomeSafety";
 import HomeService from "../components/HomeService";
 
 const Home = () => {
@@ -11,6 +13,8 @@ const Home = () => {
         <Counter />
       </Box>
       <HomeService />
+      <HomeSafety />
+      <HomeContact />
     </Box>
   );
 };
