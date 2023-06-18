@@ -38,7 +38,13 @@ const HomeContact = () => {
           }}
         />
       </Grid>
-      <Grid item></Grid>
+      <Grid item>
+        <Grid container>
+          <Grid item></Grid>
+          <Grid item></Grid>
+          <Grid item></Grid>
+        </Grid>
+      </Grid>
     </Grid>
   );
 };
