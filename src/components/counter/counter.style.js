@@ -10,6 +10,7 @@ export const CounterContainer = styled(Container)`
   padding-bottom: 64px;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 
   @media screen and (max-width: 768px) {
     gap: 12px;

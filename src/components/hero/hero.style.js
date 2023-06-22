@@ -3,6 +3,7 @@ import { Container } from "../style/theme";
 
 export const HeroContainer = styled(Container)`
   padding-right: 0;
+  position: relative;
   background: linear-gradient(180deg, #eaf1ff 0%, rgba(255, 254, 250, 0) 100%);
   display: flex;
 
@@ -61,6 +62,7 @@ export const RightHeroBox = styled.div`
 
   @media screen and (max-width: 768px) {
     margin-top: 76px;
+    position: relative;
   }
 `;
 
@@ -71,7 +73,7 @@ export const HeroImage = styled.img`
   bottom: 0;
   right: 0;
   @media screen and (max-width: 768px) {
-    display: block;
     border-radius: 0;
+    position: relative;
   }
 `;

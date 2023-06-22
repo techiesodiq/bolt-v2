@@ -62,5 +62,95 @@ export const Container = styled.div`
 `;
 
 export const PageContainer = styled.div`
-  position: relative;
+  /* position: relative; */
+`;
+
+export const Box = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  align-self: ${({ alignSelf }) => (alignSelf ? alignSelf : "normal")};
+  /* align-self: sta; */
+  padding-top: ${({ pt }) => (pt ? pt : 0)};
+  padding-bottom: ${({ pb }) => (pb ? pb : 0)};
+  padding-right: ${({ pr }) => (pr ? pr : 0)};
+  padding-left: ${({ pl }) => (pl ? pl : 0)};
+
+  margin-top: ${({ mt }) => (mt ? mt : 0)};
+  margin-bottom: ${({ mb }) => (mb ? mb : 0)};
+  margin-left: ${({ ml }) => (ml ? ml : 0)};
+  margin-right: ${({ mr }) => (mr ? mr : 0)};
+
+  max-width: ${({ width }) => (width ? width : "100%")};
+  max-height: ${({ height }) => (height ? height : "100%")};
+
+  @media screen and (max-width: 768px) {
+    padding-top: ${({ mpt }) => (mpt ? mpt : 0)};
+    padding-bottom: ${({ mpb }) => (mpb ? mpb : 0)};
+    padding-right: ${({ mpr }) => (mpr ? mpr : 0)};
+    padding-left: ${({ mpl }) => (mpl ? mpl : 0)};
+
+    margin-top: ${({ mmt }) => (mmt ? mmt : 0)};
+    margin-bottom: ${({ mmb }) => (mmb ? mmb : 0)};
+    margin-left: ${({ mml }) => (mml ? mml : 0)};
+    margin-right: ${({ mmr }) => (mmr ? mmr : 0)};
+  }
+`;
+
+export const FlexBox = styled.div`
+  display: flex;
+  gap: ${({ gap }) => (gap ? gap : 0)};
+  flex-direction: ${({ direction }) => (direction ? direction : "row")};
+  flex-wrap: wrap;
+  flex: 1 1 50%;
+  padding-top: ${({ pt }) => (pt ? pt : 0)};
+  padding-bottom: ${({ pb }) => (pb ? pb : 0)};
+  padding-right: ${({ pr }) => (pr ? pr : 0)};
+  padding-left: ${({ pl }) => (pl ? pl : 0)};
+
+  margin-top: ${({ mt }) => (mt ? mt : 0)};
+  margin-bottom: ${({ mb }) => (mb ? mb : 0)};
+  margin-left: ${({ ml }) => (ml ? ml : 0)};
+  margin-right: ${({ mr }) => (mr ? mr : 0)};
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding-top: ${({ mpt }) => (mpt ? mpt : 0)};
+    padding-bottom: ${({ mpb }) => (mpb ? mpb : 0)};
+    padding-right: ${({ mpr }) => (mpr ? mpr : 0)};
+    padding-left: ${({ mpl }) => (mpl ? mpl : 0)};
+
+    margin-top: ${({ mmt }) => (mmt ? mmt : 0)};
+    margin-bottom: ${({ mmb }) => (mmb ? mmb : 0)};
+    margin-left: ${({ mml }) => (mml ? mml : 0)};
+    margin-right: ${({ mmr }) => (mmr ? mmr : 0)};
+  }
+`;
+
+export const Paragraph = styled.p`
+  font-weight: ${({ fw }) => (fw ? fw : "400")};
+  font-size: ${({ fs }) => (fs ? fs : "20px")};
+  line-height: ${({ lh }) => (lh ? lh : "170%")};
+
+  color: ${({ color }) => (color ? color : "#475467")};
+
+  @media screen and (max-width: 768px) {
+    font-size: ${({ mfs }) => (mfs ? mfs : "14px")};
+    line-height: ${({ mlh }) => (mlh ? mlh : "170%")};
+  }
+`;
+
+export const Title = styled.h1`
+  font-weight: ${({ fw }) => (fw ? fw : "700")};
+  font-size: ${({ fs }) => (fs ? fs : "48px")};
+  line-height: ${({ lh }) => (lh ? lh : "72px")};
+  letter-spacing: -0.02em;
+  color: #101828;
+
+  @media screen and (max-width: 768px) {
+    font-weight: ${({ mfw }) => (mfw ? mfw : "600")};
+    font-size: ${({ mfs }) => (mfs ? mfs : "24px")};
+    line-height: ${({ mlh }) => (mlh ? mlh : "30px")};
+  }
 `;

@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  CounterBox,
-  CounterBoxContainer,
-  CounterContainer,
-  CounterPara,
-} from "./counter.style";
+import { CounterContainer, CounterPara } from "./counter.style";
 import counterData from "../../data/text.json";
 import NumberDisplay from "./NumberDisplay";
 
