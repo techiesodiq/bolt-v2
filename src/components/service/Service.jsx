@@ -2,12 +2,14 @@ import React from "react";
 import {
   Card,
   CardContent,
+  MediaImage,
   ServiceContainer,
   SeviceImg,
 } from "./service.style";
 import { Box, FlexBox, Paragraph, Title } from "../style/theme";
 import data from "../../data/text.json";
 import serviceImg from "../../asset/service1.png";
+import mobileSevice from "../../asset/serviceMobile.png";
 
 const {
   title,
@@ -39,6 +41,7 @@ const Service = () => {
                 <Paragraph fs="16px" lh="27px" mlh="27px" mfs="16px">
                   {solution1.description}
                 </Paragraph>
+                <MediaImage src={serviceImg} />
               </CardContent>
             </Card>
             <Card>
@@ -51,6 +54,7 @@ const Service = () => {
                 <Paragraph fs="16px" lh="27px" mlh="27px" mfs="16px">
                   {solution2.description}
                 </Paragraph>
+                <MediaImage src={mobileSevice} />
               </CardContent>
             </Card>
             <Card>
@@ -63,6 +67,7 @@ const Service = () => {
                 <Paragraph fs="16px" lh="27px" mlh="27px" mfs="16px">
                   {solution3.description}
                 </Paragraph>
+                <MediaImage src={mobileSevice} />
               </CardContent>
             </Card>
             <Card>
@@ -75,6 +80,7 @@ const Service = () => {
                 <Paragraph fs="16px" lh="27px" mlh="27px" mfs="16px">
                   {solution4.description}
                 </Paragraph>
+                <MediaImage src={mobileSevice} />
               </CardContent>
             </Card>
           </FlexBox>

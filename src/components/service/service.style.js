@@ -41,5 +41,20 @@ export const SeviceImg = styled.img`
   @media screen and (max-width: 640px) {
     height: 240px;
     margin-top: 32px;
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+`;
+
+export const MediaImage = styled.img`
+  display: none;
+
+  @media screen and (max-width: 640px) {
+    display: block;
+    max-width: 100%;
+    height: 240px;
+    width: 100%;
   }
 `;
