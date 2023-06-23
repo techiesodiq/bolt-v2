@@ -73,18 +73,18 @@ const HomeSafety = () => {
               mlh="24px"
               color="#fff"
             >
-              {details1.header}
+              {details2.header}
             </Title>
             <Paragraph fs="16px" lh="170%" mfs="16px" mlh="170%" color="#fff">
-              {details1.description}
+              {details2.description}
             </Paragraph>
           </Box>
           <Box br="16px" mbr="8px" gap="16px" pt="32px" pb="32px" mp="0 16px">
             <Title fw="600" fs="24px" lh="30px" mfs="20px" mlh="24px">
-              {details1.header}
+              {details3.header}
             </Title>
             <Paragraph fs="16px" lh="170%" mfs="16px" mlh="170%">
-              {details1.description}
+              {details3.description}
             </Paragraph>
           </Box>
         </FlexBox>

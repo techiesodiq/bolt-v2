@@ -49,3 +49,18 @@ export const TouchTitle = styled.h1`
     line-height: ${({ mlh }) => (mlh ? mlh : "30px")};
   }
 `;
+
+export const RightContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @media screen and (max-width: 768px) {
+    gap: 18px;
+  }
+`;
+
+export const RightBox = styled.div`
+  display: flex;
+  gap: 18px;
+`;
