@@ -70,8 +70,12 @@ export const Box = styled.div`
   flex-direction: column;
   flex-wrap: wrap;
   flex: 1;
+  gap: ${({ gap }) => (gap ? gap : 0)};
   align-self: ${({ alignSelf }) => (alignSelf ? alignSelf : "normal")};
+  border-radius: ${({ br }) => (br ? br : 0)};
+  color: ${({ color }) => (color ? color : "transparent")};
   /* align-self: sta; */
+  padding: ${({ p }) => (p ? p : 0)};
   padding-top: ${({ pt }) => (pt ? pt : 0)};
   padding-bottom: ${({ pb }) => (pb ? pb : 0)};
   padding-right: ${({ pr }) => (pr ? pr : 0)};
@@ -86,10 +90,14 @@ export const Box = styled.div`
   max-height: ${({ height }) => (height ? height : "100%")};
 
   @media screen and (max-width: 768px) {
-    padding-top: ${({ mpt }) => (mpt ? mpt : 0)};
-    padding-bottom: ${({ mpb }) => (mpb ? mpb : 0)};
-    padding-right: ${({ mpr }) => (mpr ? mpr : 0)};
-    padding-left: ${({ mpl }) => (mpl ? mpl : 0)};
+    padding: ${({ mp }) => (mp ? mp : 0)};
+    padding-top: ${({ mpt, mp }) => (mpt ? mpt : mp ? mp : 0)};
+    padding-bottom: ${({ mpb, mp }) => (mpb ? mpb : mp ? mp : 0)};
+    padding-right: ${({ mpr, mp }) => (mpr ? mpr : mp ? mp : 0)};
+    padding-left: ${({ mpl, mp }) => (mpl ? mpl : mp ? mp : 0)};
+
+    border-radius: ${({ mbr }) => (mbr ? mbr : 0)};
+    gap: ${({ gap }) => (gap ? gap : 0)};
 
     margin-top: ${({ mmt }) => (mmt ? mmt : 0)};
     margin-bottom: ${({ mmb }) => (mmb ? mmb : 0)};
@@ -104,6 +112,7 @@ export const FlexBox = styled.div`
   flex-direction: ${({ direction }) => (direction ? direction : "row")};
   flex-wrap: wrap;
   flex: 1 1 50%;
+  padding: ${({ p }) => (p ? p : 0)};
   padding-top: ${({ pt }) => (pt ? pt : 0)};
   padding-bottom: ${({ pb }) => (pb ? pb : 0)};
   padding-right: ${({ pr }) => (pr ? pr : 0)};
@@ -146,7 +155,7 @@ export const Title = styled.h1`
   font-size: ${({ fs }) => (fs ? fs : "48px")};
   line-height: ${({ lh }) => (lh ? lh : "72px")};
   letter-spacing: -0.02em;
-  color: #101828;
+  color: ${({ color }) => (color ? color : "#101828")};
 
   @media screen and (max-width: 768px) {
     font-weight: ${({ mfw }) => (mfw ? mfw : "600")};
