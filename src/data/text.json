@@ -65,7 +65,33 @@
       }
     }
   },
-  "about": {},
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "header": "Let's build a brighter and more connected future.",
+      "description": "BOLT Telecommunications Inc. is a young and dynamic fiber optic infrastructure company. Based in Brampton Ontario, our firm offers fiber optic services.",
+      "story": {
+        "title": "Our Story",
+        "description1": "BOLT Telecommunications Inc. is a young and dynamic fiber optic infrastructure company. Based in Brampton Ontario, our firm offers fiber optic services.",
+        "description2": "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications."
+      }
+    },
+    "description": {
+      "mission": {
+        "titile": "Our Mission",
+        "description": "Lorem ipsum dolor sit amet consectetur. Massa sed et consectetur in. Egestas ac semper dignissim quis nunc. Auctor enim curabitur dolor tempor ac in. Adipiscing massa diam sit condimentum. Morbi erat quisque mattis convallis quam faucibus."
+      },
+      "vision": {
+        "titile": "Our Vision",
+        "description": "Lorem ipsum dolor sit amet consectetur. Massa sed et consectetur in. Egestas ac semper dignissim quis nunc. Auctor enim curabitur dolor tempor ac in. Adipiscing massa diam sit condimentum. Morbi erat quisque mattis convallis quam faucibus."
+      },
+      "value": {
+        "titile": "Our Core Values",
+        "description": "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs."
+      }
+    }
+  },
+
   "service": {},
   "contact": {},
   "safety": {}
