@@ -128,6 +128,27 @@
       }
     }
   },
-  "contact": {},
+  "contact": {
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Get In touch with us",
+      "description": "we would love to hear from you. Please fill this form"
+    },
+    "address": {
+      "title": "Address",
+      "officeAddress": "88 Speedwell Street Brampton Ontario, L6X 0R8",
+      "description": "Lorem ipsum dolor sit amet consectetur. Sed nisl."
+    },
+    "email": {
+      "title": "Email",
+      "emailAddress": "info@bolttelecommunications.ca",
+      "description": "Lorem ipsum dolor sit amet consectetur. Sed nisl."
+    },
+    "phone": {
+      "title": "Phone Number",
+      "phoneNumber": "+1(437)329-9552",
+      "description": "Lorem ipsum dolor sit amet consectetur. Sed nisl."
+    }
+  },
   "safety": {}
 }
