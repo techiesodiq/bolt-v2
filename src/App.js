@@ -4,6 +4,7 @@ import { Globalstyle, theme } from "./components/style/theme";
 import Root from "./layout/Root";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Service from "./pages/Service";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,6 +14,7 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "about", element: <About /> },
+        { path: "service", element: <Service /> },
       ],
     },
   ]);

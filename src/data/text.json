@@ -89,10 +89,45 @@
         "titile": "Our Core Values",
         "description": "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs."
       }
+    },
+    "review": {
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur. Nisl massa id maecenas porta gravida diam. Vitae diam neque id posuere. Praesent pellentesque elementum."
     }
   },
 
-  "service": {},
+  "service": {
+    "offer": {
+      "title": "Services we offer",
+      "description": "We are in the fibre optic splicing business. We major on the implementation of FTTH, MDU, WTTH, FTTB, FTTC, FTTN, and FTTR Networks"
+    },
+    "fibre": {
+      "home": {
+        "title": "Fibre To The Home (FTTH)",
+        "description": "Fibre To The Home (FTTH) is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings. With FTTH, the fiber optic cable is run all the way from the internet service provider's (ISP) central office to the customer's home, delivering faster and more reliable internet speeds compared to traditional broadband internet services that use copper cables."
+      },
+      "building": {
+        "title": "Fibre To The Building (FTTB)",
+        "description": "Fibre To The Home (FTTH) is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings. With FTTH, the fiber optic cable is run all the way from the internet service provider's (ISP) central office to the customer's home, delivering faster and more reliable internet speeds compared to traditional broadband internet services that use copper cables."
+      },
+      "installation": {
+        "title": "Installation & Design Solution",
+        "description": "Fibre To The Home (FTTH) is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings. With FTTH, the fiber optic cable is run all the way from the internet service provider's (ISP) central office to the customer's home, delivering faster and more reliable internet speeds compared to traditional broadband internet services that use copper cables."
+      },
+      "mdu": {
+        "title": "Multi Dwelling Units (MDU)",
+        "description": "Fibre To The Home (FTTH) is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings. With FTTH, the fiber optic cable is run all the way from the internet service provider's (ISP) central office to the customer's home, delivering faster and more reliable internet speeds compared to traditional broadband internet services that use copper cables."
+      },
+      "curb": {
+        "title": "Fibre To The Curb (FTTC)",
+        "description": "Fibre To The Home (FTTH) is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings. With FTTH, the fiber optic cable is run all the way from the internet service provider's (ISP) central office to the customer's home, delivering faster and more reliable internet speeds compared to traditional broadband internet services that use copper cables."
+      },
+      "room": {
+        "title": "Fibre To The Room (FTTR)",
+        "description": "Fibre To The Home (FTTH) is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings. With FTTH, the fiber optic cable is run all the way from the internet service provider's (ISP) central office to the customer's home, delivering faster and more reliable internet speeds compared to traditional broadband internet services that use copper cables."
+      }
+    }
+  },
   "contact": {},
   "safety": {}
 }
