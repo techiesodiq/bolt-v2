@@ -148,6 +148,25 @@
       "title": "Phone Number",
       "phoneNumber": "+1(437)329-9552",
       "description": "Lorem ipsum dolor sit amet consectetur. Sed nisl."
+    },
+    "form": {
+      "name": {
+        "label": "Full Name",
+        "placeHolder": "George Omalay"
+      },
+      "email": {
+        "label": "Email",
+        "placeHolder": "gomalay@gmail.com"
+      },
+      "number": {
+        "label": "Phone Number",
+        "placeHolder": "+1(437)329-9552"
+      },
+      "message": {
+        "label": "Message",
+        "placeHolder": "Leave Us a message."
+      },
+      "button": "Send Message"
     }
   },
   "safety": {}

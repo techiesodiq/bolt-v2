@@ -8,12 +8,14 @@ import {
   ImgContainer,
 } from "../components/contactTouch/contactTouch.style";
 import ContactInfo from "../components/contactInfo/ContactInfo";
+import Form from "../components/form/Form";
 
 const Contact = () => {
   return (
     <PageContainer>
       <ContactContainer>
         <ContactTouch />
+        <Form />
         <ImgContainer>
           <ContactImg src={contactImg} />
         </ImgContainer>

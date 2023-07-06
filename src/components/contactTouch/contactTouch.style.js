@@ -15,7 +15,6 @@ export const TouchContainer = styled(Container)`
   flex-direction: column;
   justify-content: center;
   padding-top: 96px;
-  padding-bottom: 48px;
   text-align: center;
   gap: 12px;
 
