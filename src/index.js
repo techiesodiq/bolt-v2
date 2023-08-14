@@ -1,7 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
 import "./index.css";
 import App from "./App";
+
+// import font
+
+import "./font/clashGrotesk/ClashGrotesk-Bold.woff";
+import "./font/clashGrotesk/ClashGrotesk-Light.woff";
+import "./font/clashGrotesk/ClashGrotesk-Medium.woff";
+import "./font/clashGrotesk/ClashGrotesk-Regular.woff";
+import "./font/clashGrotesk/ClashGrotesk-Semibold.woff";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

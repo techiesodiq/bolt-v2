@@ -6,6 +6,7 @@ export const TouchContainer = styled(Container)`
   justify-content: space-between;
   padding: 96px 96px 48px;
   align-items: flex-start;
+  background: rgba(1, 62, 189, 0.03);
 
   @media screen and (max-width: 768px) {
     display: block;

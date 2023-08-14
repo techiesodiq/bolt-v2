@@ -20,7 +20,7 @@ export const theme = {
     counter: "64px",
   },
   lineHeight: {
-    header1: "68px",
+    header1: "64px",
     header2: "54px",
     header3: "44px",
     body1: "170%",

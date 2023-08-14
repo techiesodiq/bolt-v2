@@ -7,7 +7,7 @@ export const CounterContainer = styled(Container)`
   gap: 16px;
   background-color: #fff;
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 16px;
   justify-content: flex-start;
   align-items: center;
   position: relative;

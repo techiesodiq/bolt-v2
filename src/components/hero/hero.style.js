@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { Container } from "../style/theme";
 
 export const HeroContainer = styled(Container)`
-  padding-right: 0;
   position: relative;
   background: linear-gradient(180deg, #eaf1ff 0%, rgba(255, 254, 250, 0) 100%);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -14,11 +14,10 @@ export const HeroContainer = styled(Container)`
 `;
 
 export const LeftHeroBox = styled.div`
-  display: block;
   text-align: left;
-  margin-top: 90px;
-  margin-bottom: 222px;
-  flex: 1 1 50%;
+  margin-top: 76px;
+  margin-bottom: 30px;
+  width: 100%;
 
   @media screen and (max-width: 1280px) {
     margin-bottom: 111px;
@@ -31,9 +30,10 @@ export const LeftHeroBox = styled.div`
 `;
 
 export const LeftHeroHeader = styled.h1`
+  font-family: "ClashRegular";
   font-size: ${({ theme }) => theme.fontSize.header1};
   line-height: ${({ theme }) => theme.lineHeight.header1};
-  letter-spacing: ${({ theme }) => theme.letterSpacing.header};
+  letter-spacing: -0.96px;
   color: ${({ theme }) => theme.textColor.header};
 
   @media screen and (max-width: 768px) {
@@ -44,9 +44,11 @@ export const LeftHeroHeader = styled.h1`
 `;
 
 export const LeftHeroPara = styled.p`
-  font-size: ${({ theme }) => theme.fontSize.body2};
-  line-height: ${({ theme }) => theme.lineHeight.body2};
+  font-size: 20px;
+  line-height: 36px;
   margin: 24px 0;
+  max-width: 514px;
+  letter-spacing: 0.3px;
 
   @media screen and (max-width: 768px) {
     font-size: ${({ theme }) => theme.fontSize.body3};
@@ -56,9 +58,9 @@ export const LeftHeroPara = styled.p`
 `;
 
 export const RightHeroBox = styled.div`
+  margin-top: 96px;
   position: relative;
-  display: block;
-  flex: 1 1 50%;
+  display: flex;
 
   @media screen and (max-width: 768px) {
     margin-top: 76px;
@@ -70,7 +72,6 @@ export const HeroImage = styled.img`
   max-width: 100%;
   border-radius: 6px;
   position: absolute;
-  bottom: 0;
   right: 0;
   @media screen and (max-width: 768px) {
     border-radius: 0;

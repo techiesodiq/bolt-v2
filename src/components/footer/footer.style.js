@@ -3,7 +3,7 @@ import { Container } from "../style/theme";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled(Container)`
-  background: #ffffff;
+  background: #000;
   border-top: 0.5px solid rgba(102, 112, 133, 0.3);
   padding-top: 62px;
   padding-bottom: 54px;
@@ -45,7 +45,7 @@ export const FooterIcon = styled.div`
   height: 36px;
   width: 36px;
   border-radius: 50%;
-  background: rgb(1, 62, 189, 0.2);
+  background: #fff;
   align-items: center;
   justify-content: center;
   color: #013ebd;
@@ -60,7 +60,7 @@ export const FooterMenu = styled.ul`
   display: flex;
   gap: 32px;
   padding: ${({ pt }) => pt} 0 ${({ pb }) => pb};
-  border-bottom: ${({ border }) => border} solid rgba(102, 112, 133, 0.3);
+  border-bottom: ${({ border }) => border} solid #fff;
 
   @media screen and (max-width: 768px) {
     flex-direction: ${({ direction }) => direction};
@@ -76,7 +76,7 @@ export const FooterLink = styled(Link)`
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  color: ${({ color }) => color};
+  color: #fff;
 
   &:hover {
     color: ${({ theme }) => theme.bgColor.primary};
@@ -89,7 +89,7 @@ export const FooterPara = styled.div`
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
-  color: #667085;
+  color: #fff;
 `;
 
 export const MobileIcon = styled.div`

@@ -6,17 +6,40 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutBox = styled(Container)`
-  display: flex;
+  display: grid;
   padding-top: 96px;
   padding-bottom: 96px;
-  justify-content: center;
-  flex-direction: column;
   gap: 24px;
-  align-items: center;
+  text-align: left;
 
   @media screen and (max-width: 640px) {
-    display: none;
   }
+`;
+
+export const ParagraphBox = styled.div`
+  margin-top: 70px;
+  display: inline-flex;
+  padding: 79px;
+  justify-content: center;
+  align-items: center;
+  background: #fffdf6;
+`;
+
+export const Title = styled.h2`
+  color: #101828;
+  font-family: ClashRegular;
+  font-size: 48px;
+  line-height: 65px; /* 135.417% */
+  letter-spacing: -0.96px;
+  max-width: 656px;
+`;
+
+export const Paragraph = styled.p`
+  color: #101828;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 170%; /* 47.6px */
 `;
 
 export const MobileAbout = styled(Container)`

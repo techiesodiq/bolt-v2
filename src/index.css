@@ -1,5 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap");
 
+@font-face {
+  font-family: "ClashBold"; /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./font/clashGrotesk/ClashGrotesk-Bold.woff") format("truetype");
+}
+
+@font-face {
+  font-family: "ClashMedium"; /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./font/clashGrotesk/ClashGrotesk-Medium.woff") format("truetype");
+}
+
+@font-face {
+  font-family: "ClashLight"; /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./font/clashGrotesk/ClashGrotesk-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ClashRegular"; /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./font/clashGrotesk/ClashGrotesk-Regular.woff") format("truetype");
+}
+
+@font-face {
+  font-family: "ClashSemiBold"; /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./font/clashGrotesk/ClashGrotesk-Semibold.woff") format("truetype");
+}
+
 body {
   margin: 0;
   font-family: "Red Hat Display", BlinkMacSystemFont, "Segoe UI", "Roboto",

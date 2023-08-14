@@ -1,5 +1,4 @@
 import React from "react";
-import hero from "../../asset/hero.png";
 import {
   HeroContainer,
   HeroImage,
@@ -8,21 +7,25 @@ import {
   LeftHeroPara,
   RightHeroBox,
 } from "./hero.style";
-import heroText from "../../data/text.json";
+import { home } from "../../data/text";
 import Button from "../../ui/button/Button";
 
-const { title, subtitle } = heroText.home.hero;
+const { title, description, button, image } = home.hero;
 
 const Hero = () => {
   return (
     <HeroContainer>
       <LeftHeroBox>
-        <LeftHeroHeader>{title}</LeftHeroHeader>
-        <LeftHeroPara>{subtitle}</LeftHeroPara>
-        <Button>Contact Us</Button>
+        <LeftHeroHeader>
+          Transform your <span style={{ color: "#013EBD" }}>Business</span>{" "}
+          operations with the best{" "}
+          <span style={{ color: "#013EBD" }}>Fiber Solution</span>
+        </LeftHeroHeader>
+        <LeftHeroPara>{description}</LeftHeroPara>
+        <Button>{button}</Button>
       </LeftHeroBox>
       <RightHeroBox>
-        <HeroImage src={hero} />
+        <HeroImage src={image} />
       </RightHeroBox>
     </HeroContainer>
   );
