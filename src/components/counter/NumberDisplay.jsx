@@ -9,7 +9,11 @@ const NumberDisplay = ({ number }) => {
   return (
     <CounterBoxContainer>
       {digits.map((digit, index) => (
-        <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+        <VisibilitySensor
+          partialVisibility
+          offset={{ bottom: 200 }}
+          key={index}
+        >
           {({ isVisible }) => (
             <CounterBox key={index}>
               {isVisible ? (

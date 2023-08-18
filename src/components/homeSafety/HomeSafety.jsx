@@ -14,14 +14,14 @@ import {
 
 import { home } from "../../data/text.js";
 
-const { img1, img2, safetyStatus, title } = home.safety;
+const { image1, image2, options, title } = home.safety;
 const HomeSafety = () => {
   return (
     <SafetyContainer>
       <SafetyTitle>{title}</SafetyTitle>
       <SafetyWrapper>
         <LeftBox>
-          {safetyStatus.map((safe, index) => (
+          {options.map((safe, index) => (
             <TextWrapper key={index}>
               <SafetySubTitle>{safe.title}</SafetySubTitle>
               <SafetyDescription>{safe.description}</SafetyDescription>
@@ -29,10 +29,10 @@ const HomeSafety = () => {
           ))}
         </LeftBox>
         <RightBox>
-          <SafetyKitImg src={img1} alt="safetykit" />
+          <SafetyKitImg src={image1} alt="safetykit" />
           <ImgGrid>
-            <SafetyKitImg src={img2} alt="safetykit" />
-            <SafetyKitImg src={img2} alt="safetykit" />
+            <SafetyKitImg src={image2} alt="safetykit" />
+            <SafetyKitImg src={image2} alt="safetykit" />
           </ImgGrid>
         </RightBox>
       </SafetyWrapper>

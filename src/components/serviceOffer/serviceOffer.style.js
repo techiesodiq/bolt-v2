@@ -1,72 +1,66 @@
 import { styled } from "styled-components";
 import { Container } from "../style/theme";
+import { Link } from "react-router-dom";
 
 export const ServiceBox = styled(Container)`
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  display: grid;
+  padding-top: 112px;
+  margin-bottom: 112px;
+  text-align: center;
 
   @media screen and (max-width: 640px) {
     flex-direction: column;
   }
 `;
 
-export const ServiceCard = styled.div`
-  flex: 1;
-`;
-
-export const ServiceTitleBox = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  padding-top: 90px;
-  text-align: left;
-  max-width: 471px;
-
-  @media screen and (max-width: 640px) {
-    max-width: 100%;
-    padding-top: 60px;
-  }
-`;
-
-export const ServiceTitle = styled.h2`
+export const Title = styled.h2`
   color: #101828;
+  font-family: "ClashRegular";
   font-size: 48px;
-  font-weight: 700;
-  line-height: 54px;
+  line-height: 65px; /* 135.417% */
   letter-spacing: -0.96px;
-
-  @media screen and (max-width: 640px) {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 40px;
-    letter-spacing: -0.72px;
-  }
+  margin-bottom: 50px;
 `;
 
-export const ServiceDescription = styled.p`
-  color: rgba(71, 84, 103, 0.7);
+export const SolutionBox = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-content: space-between;
+`;
+
+export const SolutionCard = styled.div`
+  text-align: center;
+  padding: 53px 45px;
+  border-radius: 24px;
+  border: 0.7px solid #013ebd;
+  background: #fffdf6;
+`;
+
+export const CardTitle = styled.h3`
+  color: #101828;
+  font-family: ClashRegular;
+  font-size: 32px;
+  line-height: 44px; /* 137.5% */
+  letter-spacing: -0.64px;
+  margin-bottom: 20px;
+`;
+
+export const CardParagraph = styled.p`
+  color: #475467;
+  font-family: Inter;
   font-size: 20px;
   font-weight: 400;
   line-height: 170%;
-
-  @media screen and (max-width: 640px) {
-    color: #475467;
-    font-size: 16px;
-    line-height: 30px;
-  }
+  margin-bottom: 43px;
 `;
 
-export const FullImgContainer = styled.div`
-  display: flex;
-  gap: 24px;
-  position: relative;
-  justify-content: flex-end;
-  @media screen and (max-width: 640px) {
-    display: none;
-  }
-`;
-
-export const OfferImg = styled.img`
-  border-radius: 6px;
-  max-height: 100%;
+export const CardLink = styled(Link)`
+  color: #013ebd;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px; /* 125% */
+  text-decoration-line: underline;
 `;

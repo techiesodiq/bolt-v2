@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../../data/text.json";
+import { about } from "../../data/text";
 import customerReview from "../../asset/customer-review 1.svg";
 import collaboration from "../../asset/collaboration (2) 1.svg";
 import vector from "../../asset/Vector.svg";
@@ -22,8 +22,7 @@ import {
 } from "./mission.style";
 import { AboutContainer } from "../story/story.style";
 
-const { mission, value, vision } = data.about.description;
-const { title, description } = data.about.review;
+const { mission, vision, value } = about;
 
 const Mission = () => {
   return (
@@ -53,7 +52,7 @@ const Mission = () => {
         </MissionDescription>
       </ValueContainer>
 
-      <ReviewContainer>
+      {/* <ReviewContainer>
         <ReviewCard>
           <ReviewImg src={customerReview} />
           <ReviewTextCard>
@@ -89,7 +88,7 @@ const Mission = () => {
             <ReviewText>{description}</ReviewText>
           </ReviewTextCard>
         </ReviewCard>
-      </ReviewContainer>
+      </ReviewContainer> */}
     </AboutContainer>
   );
 };

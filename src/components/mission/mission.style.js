@@ -10,6 +10,39 @@ export const MissionContainer = styled(Container)`
   }
 `;
 
+export const MissionWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+`;
+
+export const MissionTitle = styled.h2`
+  color: #101828;
+  font-family: ClashSemiBold;
+  font-size: 36px;
+  line-height: 48px; /* 133.333% */
+  letter-spacing: -0.72px;
+  margin-bottom: 12px;
+
+  @media screen and (max-width: 640px) {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+`;
+export const MissionDescription = styled.p`
+  color: rgba(16, 24, 40, 0.7);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 170%; /* 34px */
+`;
+
+export const MissionLine = styled.div`
+  width: 84px;
+  height: 2px;
+  background: #013ebd;
+`;
+
 export const MissionBox = styled.div`
   padding: 96px 0;
   display: flex;
@@ -35,26 +68,6 @@ export const FullContainer = styled.div`
   @media screen and (max-width: 640px) {
     padding: 0 16px;
   }
-`;
-
-export const MissionTitle = styled.h1`
-  color: #101828;
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: -0.72px;
-
-  @media screen and (max-width: 640px) {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 22px;
-  }
-`;
-
-export const MissionDescription = styled.p`
-  color: rgba(16, 24, 40, 0.7);
-  font-size: 16px;
-  line-height: 170%;
-  max-width: 528px;
 `;
 
 export const BorderBox = styled.div`

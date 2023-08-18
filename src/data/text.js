@@ -53,24 +53,24 @@ export const home = {
         image: require("../asset/unsplash_X6dGWWcSdds.png"),
       },
       {
-        title: "Fibre To The Building (FTTB)",
+        title: "Fibre To The Home (FTTB)",
         description:
-          "FTTH fiber optic cables are extended up to the building's telecommunication room or distribution point, typically located in the basement or a central location within the building.",
+          "FTTH is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings.",
         image: require("../asset/unsplash_X6dGWWcSdds.png"),
       },
       {
-        title: "Multi-Dwelling Units (MDU)",
+        title: "Fibre To The Home",
         description:
-          "The fiber access point is usually outside the building, which is suitable for each household to use a separate fiber.",
+          "FTTH is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings.",
         image: require("../asset/unsplash_X6dGWWcSdds.png"),
       },
     ],
   },
   safety: {
     title: "Health and Safety",
-    img1: require("../asset/helment.png"),
-    img2: require("../asset/dark_Element.png"),
-    safetyStatus: [
+    image1: require("../asset/helment.png"),
+    image2: require("../asset/dark_Element.png"),
+    options: [
       {
         title: "We Are Safety Conscious",
         description:
@@ -79,38 +79,104 @@ export const home = {
       {
         title: "Industry Involvement",
         description:
-          "As an industry leader, we are involved and proactive in providing solutions and sharing ideas with clients and peers. We pride ourselves on our commitment to engaging with industry and helping shape the future of safety in the energy sector. ",
+          "As an industry leader, we are involved and proactive in providing solutions and sharing ideas with clients and peers. We pride ourselves on our commitment to engaging with industry and helping shape the future of safety in the energy sector.",
       },
       {
-        title: "Safety Intiatives",
+        title: "Industry Involvement",
         description:
-          "We have palyed a key role in developing training systems to assist industries in metting the new workspace electrical safety standards. We have also produced safety videos that are shared with industries allowing other companies utilize these tools in the spirit of creating safer workplaces",
+          "We have played a key role in developing training systems to assist industry in meeting the new workplace electrical safety standards. We have also produced safety videos that are shared with industry allowing other companies to utilize these tools in the spirit of creating safer workplaces.",
       },
     ],
   },
 };
 
 export const about = {
-  title: "Let's build a brighter and more connected future.",
-  decription:
+  header: "Let's build a brighter and more connected future.",
+  paragraph:
     "BOLT Telecommunications Inc. is a Canadian fibre optic splicing company established to build, and upgrade telecommunication network infrastructure. We are based in Scarborough, Ontario and are proud contractors of major telecommunication and utility companies across Canada.\n We are core specialists in the implementation of FTTH, FTTR, FTTB, MDU, WTTH, FTTC, FTTN networks and we consistently deliver the same uncompromising quality which has helped cement our reputation as a credible company in the industry and we are proud to continue delivering network builds with no held orders till date.",
   mission: {
     title: "Our Mission",
     description:
       "Our mission is to serve our clients needs by delivering budget-friendly network builds of the highest industry standards ahead of deadlines.",
-    img1: require("../asset/shake.png"),
-    img2: require("../asset/study.png"),
+    studyImg: require("../asset/study.png"),
+    shakeImg: require("../asset/shake.png"),
   },
-  mission: {
+  vision: {
     title: "Our Vision",
     description:
       "Our vision for BOLT Telecommunications is to establish a global fibre optic splicing company of the highest industry standards.",
-    img1: require("../asset/shake.png"),
-    img2: require("../asset/study.png"),
+    studyImg: require("../asset/study.png"),
+    shakeImg: require("../asset/shake.png"),
   },
   value: {
     title: "Our Core Values",
     description:
       "We are a people first organization that prioritises safety above all else.",
   },
+};
+
+export const services = {
+  title: "Services We Offer",
+  options: [
+    {
+      title: "We offer the best fibre optic solutions",
+      description:
+        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+      button: "Get started",
+    },
+    {
+      title: "We offer the best fibre optic solutions",
+      description:
+        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+      button: "Get started",
+    },
+    {
+      title: "We offer the best fibre optic solutions",
+      description:
+        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+      button: "Get started",
+    },
+    {
+      title: "We offer the best fibre optic solutions",
+      description:
+        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+      button: "Get started",
+    },
+    {
+      title: "We offer the best fibre optic solutions",
+      description:
+        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+      button: "Get started",
+    },
+    {
+      title: "We offer the best fibre optic solutions",
+      description:
+        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+      button: "Get started",
+    },
+  ],
+};
+
+export const career = {
+  title: "Careers at Bolt Telecommunication",
+  description:
+    "Based in Ontario, BOLT Telecommunications Inc. is a fibre optic design and implementation firm serving the telecommunications and utilities industry. BOLT is a privately owned company which specializes in design, end-to-end network engineering and implementation services.",
+  img: [
+    require("../asset/pool.png"),
+    require("../asset/table.png"),
+    require("../asset/cruiz.png"),
+    require("../asset/discussion.png"),
+    require("../asset/game.png"),
+  ],
+  subTitle: "Available job opening",
+  options: [
+    {
+      title: "Fibre Optic Technician",
+      description: "Ontario, Canada",
+    },
+    {
+      title: "Field Operations Manager",
+      description: "Ontario, Canada",
+    },
+  ],
 };

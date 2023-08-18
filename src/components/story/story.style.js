@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
 export const AboutBox = styled(Container)`
   display: grid;
   padding-top: 96px;
-  padding-bottom: 96px;
+  /* padding-bottom: 96px; */
   gap: 24px;
   text-align: left;
 
