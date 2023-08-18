@@ -10,7 +10,7 @@ import {
 } from "./story.style";
 import { about } from "../../data/text";
 
-const { decription, header } = about;
+const { paragraph, header } = about;
 
 const brighter = header.split("brighter");
 
@@ -23,7 +23,7 @@ const Story = () => {
           {brighter[1]}
         </Title>
         <ParagraphBox>
-          <Paragraph>{decription}</Paragraph>
+          <Paragraph>{paragraph}</Paragraph>
         </ParagraphBox>
       </AboutBox>
       {/* <MobileAbout>
