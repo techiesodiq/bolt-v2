@@ -1,18 +1,31 @@
 import { styled } from "styled-components";
 import { Container } from "../style/theme";
 
-export const MissionContainer = styled(Container)`
+export const MarginContainer = styled(Container)`
+  margin-top: 150px;
   position: relative;
+`;
+export const MissionContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background: #f9fafb;
+  justify-content: space-between;
+  padding-bottom: 166px;
 
   @media screen and (max-width: 640px) {
     margin-top: 40px;
   }
 `;
 
-export const MissionWrapper = styled.div`
+export const VisionContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background: #f9fafb;
+  justify-content: space-between;
+  align-items: flex-end;
+`;
+
+export const MissionWrapper = styled.div`
   text-align: left;
 `;
 
@@ -35,6 +48,7 @@ export const MissionDescription = styled.p`
   font-size: 20px;
   font-weight: 500;
   line-height: 170%; /* 34px */
+  max-width: 530px;
 `;
 
 export const MissionLine = styled.div`
@@ -44,11 +58,7 @@ export const MissionLine = styled.div`
 `;
 
 export const MissionBox = styled.div`
-  padding: 96px 0;
-  display: flex;
-  gap: 50px;
-  align-items: ${(alignItems) => alignItems};
-  justify-content: space-between;
+  /* align-items: ${(alignItems) => alignItems}; */
 
   @media screen and (max-width: 640px) {
     display: flex;
@@ -61,6 +71,24 @@ export const MissionBox = styled.div`
   }
 `;
 
+export const BorderBottom = styled.div`
+  width: 84px;
+  height: 2px;
+  background: #013ebd;
+`;
+
+export const ImgWrapper = styled.div`
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: end;
+  gap: 54px;
+`;
+
+export const Image = styled.img`
+  border-radius: 16px;
+`;
+
 export const FullContainer = styled.div`
   padding: 0 96px;
   background-color: #fffefa;
@@ -70,29 +98,13 @@ export const FullContainer = styled.div`
   }
 `;
 
-export const BorderBox = styled.div`
-  height: 84px;
-  /* display: block; */
-  display: flex;
-  align-items: center;
-  ${({ direction }) => `padding-${direction}`}: 16px;
-  ${({ direction }) => `border-${direction}`}: 2px solid #013EBD;
-
-  @media screen and (max-width: 640px) {
-    height: auto;
-    border: 0;
-    padding: 0;
-    text-align: center;
-    order: -1;
-  }
-`;
-
-export const ValueContainer = styled(Container)`
+export const ValueContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  margin-top: 42px;
+  margin-top: 166px;
+  max-width: 682px;
 
   @media Screen and (max-width: 640px) {
     display: flex;
@@ -105,12 +117,20 @@ export const ValueContainer = styled(Container)`
   }
 `;
 
-export const ReviewContainer = styled(Container)`
+export const ValueDescription = styled.p`
+  color: rgba(16, 24, 40, 0.7);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 170%;
+`;
+
+export const ReviewContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 63px;
   justify-content: flex-start;
-  padding-top: 54px;
+  margin-top: 122px;
   padding-bottom: 107px;
 
   @media screen and (max-width: 640px) {
