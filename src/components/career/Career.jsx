@@ -1,12 +1,13 @@
 import React from "react";
 import {
-  CareerContainer,
+  Border,
   CareerHeader,
   Image,
   ImgWrapper,
   JobBox,
   JobText,
   JobTitle,
+  MarginBottom,
   Paragraph,
   SubTitle,
   TextField,
@@ -18,7 +19,7 @@ const { description, img, options, subTitle, title } = career;
 
 const Career = () => {
   return (
-    <CareerContainer>
+    <>
       <CareerHeader>
         <Title>{title}</Title>
         <Paragraph>{description}</Paragraph>
@@ -30,15 +31,18 @@ const Career = () => {
       </ImgWrapper>
       <SubTitle>{subTitle}</SubTitle>
 
-      {options.map((option, index) => (
-        <JobBox>
-          <TextField key={index}>
-            <JobTitle>{option.title}</JobTitle>
-            <JobText>{option.description}</JobText>
-          </TextField>
-        </JobBox>
-      ))}
-    </CareerContainer>
+      <MarginBottom>
+        {options.map((option, index) => (
+          <JobBox>
+            <TextField key={index}>
+              <JobTitle>{option.title}</JobTitle>
+              <JobText>{option.description}</JobText>
+            </TextField>
+            <Border />
+          </JobBox>
+        ))}
+      </MarginBottom>
+    </>
   );
 };
 

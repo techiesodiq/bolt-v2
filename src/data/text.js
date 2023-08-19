@@ -113,6 +113,27 @@ export const about = {
     description:
       "We are a people first organization that prioritises safety above all else.",
   },
+
+  options: [
+    {
+      title: "People",
+      description:
+        "Lorem ipsum dolor sit amet consectetur. Nisl massa id maecenas porta gravida diam. Vitae diam neque id posuere. Praesent pellentesque elementum.",
+      img: require("../asset/customer-review 1.svg"),
+    },
+    {
+      title: "Safety",
+      description:
+        "Lorem ipsum dolor sit amet consectetur. Nisl massa id maecenas porta gravida diam. Vitae diam neque id posuere. Praesent pellentesque elementum.",
+      img: require("../asset/Vector.svg"),
+    },
+    {
+      title: "Innovation",
+      description:
+        "Lorem ipsum dolor sit amet consectetur. Nisl massa id maecenas porta gravida diam. Vitae diam neque id posuere. Praesent pellentesque elementum.",
+      img: require("../asset/respect (2) 1.svg"),
+    },
+  ],
 };
 
 export const services = {
@@ -175,7 +196,7 @@ export const career = {
       description: "Ontario, Canada",
     },
     {
-      title: "Field Operations Manager",
+      title: "Field Operations Manager",
       description: "Ontario, Canada",
     },
   ],

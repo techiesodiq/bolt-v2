@@ -63,20 +63,23 @@ export const SubTitle = styled.h2`
 
 export const JobBox = styled.div`
   max-width: 1223px;
-  border-bottom: 1px solid #9ca3af;
   display: grid;
-  text-align: left;
-  align-items: center;
-  justify-content: center;
+  margin: 0 114px 18px;
+`;
+export const Border = styled.div`
+  border-bottom: 1px solid #9ca3af;
+  width: 100%;
+  opacity: 0.5;
 `;
 
 export const TextField = styled.div`
   display: grid;
   gap: 8px;
+  margin-bottom: 18px;
 `;
 
 export const JobTitle = styled.h3`
-  color: var(--primary-haiti, #1b1436);
+  color: #1b1436;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Montserrat;
   font-size: 18px;
@@ -89,7 +92,12 @@ export const JobTitle = styled.h3`
 export const JobText = styled.p`
   font-family: Montserrat;
   font-size: 16px;
+  opacity: 0.5;
   font-style: normal;
   font-weight: 400;
   line-height: 170%; /* 27.2px */
+`;
+
+export const MarginBottom = styled.div`
+  margin-bottom: 216px;
 `;

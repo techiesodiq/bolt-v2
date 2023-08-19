@@ -3,8 +3,6 @@ import { about } from "../../data/text";
 import customerReview from "../../asset/customer-review 1.svg";
 import collaboration from "../../asset/collaboration (2) 1.svg";
 import vector from "../../asset/Vector.svg";
-import respect from "../../asset/respect (2) 1.svg";
-import execution from "../../asset/execution 1.svg";
 import {
   BorderBox,
   FullContainer,
@@ -21,8 +19,10 @@ import {
   ValueContainer,
 } from "./mission.style";
 import { AboutContainer } from "../story/story.style";
+import data from "../../data/text.json";
 
 const { mission, vision, value } = about;
+const { description } = data.about.review;
 
 const Mission = () => {
   return (
@@ -52,43 +52,29 @@ const Mission = () => {
         </MissionDescription>
       </ValueContainer>
 
-      {/* <ReviewContainer>
+      <ReviewContainer>
         <ReviewCard>
           <ReviewImg src={customerReview} />
           <ReviewTextCard>
-            <ReviewTitle>{title}</ReviewTitle>
+            <ReviewTitle>Peole</ReviewTitle>
             <ReviewText>{description}</ReviewText>
           </ReviewTextCard>
         </ReviewCard>
         <ReviewCard>
           <ReviewImg src={collaboration} />
           <ReviewTextCard>
-            <ReviewTitle>{title}</ReviewTitle>
+            <ReviewTitle>Safety</ReviewTitle>
             <ReviewText>{description}</ReviewText>
           </ReviewTextCard>
         </ReviewCard>
         <ReviewCard>
           <ReviewImg src={vector} />
           <ReviewTextCard>
-            <ReviewTitle>{title}</ReviewTitle>
+            <ReviewTitle>Innovation</ReviewTitle>
             <ReviewText>{description}</ReviewText>
           </ReviewTextCard>
         </ReviewCard>
-        <ReviewCard>
-          <ReviewImg src={respect} />
-          <ReviewTextCard>
-            <ReviewTitle>{title}</ReviewTitle>
-            <ReviewText>{description}</ReviewText>
-          </ReviewTextCard>
-        </ReviewCard>
-        <ReviewCard>
-          <ReviewImg src={customerReview} />
-          <ReviewTextCard>
-            <ReviewTitle>{title}</ReviewTitle>
-            <ReviewText>{description}</ReviewText>
-          </ReviewTextCard>
-        </ReviewCard>
-      </ReviewContainer> */}
+      </ReviewContainer>
     </AboutContainer>
   );
 };
