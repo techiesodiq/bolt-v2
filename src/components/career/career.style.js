@@ -17,7 +17,7 @@ export const CareerHeader = styled.div`
   text-align: center;
   margin-top: 156px;
   gap: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 `;
 
 export const Title = styled.h2`
@@ -40,15 +40,15 @@ export const Paragraph = styled.p`
 
 export const ImgWrapper = styled.div`
   display: flex;
-  justify-content: start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
-  margin-bottom: 140px;
+  margin-bottom: 40px;
 `;
 
 export const Image = styled.img`
   max-width: 100%;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 `;
 
 export const SubTitle = styled.h2`

@@ -188,13 +188,7 @@ export const career = {
   title: "Careers at Bolt Telecommunication",
   description:
     "Based in Ontario, BOLT Telecommunications Inc. is a fibre optic design and implementation firm serving the telecommunications and utilities industry. BOLT is a privately owned company which specializes in design, end-to-end network engineering and implementation services.",
-  img: [
-    require("../asset/pool.png"),
-    require("../asset/table.png"),
-    require("../asset/cruiz.png"),
-    require("../asset/discussion.png"),
-    require("../asset/game.png"),
-  ],
+  img: [require("../asset/unsplash_e_jxSlpe3Co.png")],
   subTitle: "Available job opening",
   options: [
     {
