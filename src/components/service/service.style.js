@@ -2,8 +2,8 @@ import { styled } from "styled-components";
 import { Container } from "../style/theme";
 
 export const ServiceContainer = styled(Container)`
-  position: relative;
-  width: 100%;
+  /* position: relative; */
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -50,13 +50,13 @@ export const HeaderWrapper = styled.div`
 export const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  width: 100%;
   /* grid-auto-rows: minmax(327px, auto); */
   column-gap: 20px;
   row-gap: 48px;
-  /* margin: 0 96px; */
-  /* max-width: 1248px; */
   z-index: 1;
   text-align: left;
+  justify-content: center;
 `;
 
 export const ServiceCard = styled.div`

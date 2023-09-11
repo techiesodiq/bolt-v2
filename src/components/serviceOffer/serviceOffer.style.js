@@ -24,18 +24,26 @@ export const Title = styled.h2`
 `;
 
 export const SolutionBox = styled.div`
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 `;
 
 export const SolutionCard = styled.div`
+  display: grid;
   text-align: center;
   padding: 53px 45px;
   border-radius: 24px;
   border: 0.7px solid #013ebd;
   background: #fffdf6;
+  min-height: 500px;
+  /* max-width: 604px; */
+
+  max-width: 48.4%;
+  align-content: space-between;
 `;
 
 export const CardTitle = styled.h3`

@@ -20,8 +20,10 @@ const ServiceOffer = () => {
       <SolutionBox>
         {options.map((option, index) => (
           <SolutionCard key={index}>
-            <CardTitle>{option.title}</CardTitle>
-            <CardParagraph>{option.description}</CardParagraph>
+            <div>
+              <CardTitle>{option.title}</CardTitle>
+              <CardParagraph>{option.description}</CardParagraph>
+            </div>
             <CardLink>{option.button}</CardLink>
           </SolutionCard>
         ))}

@@ -10,7 +10,7 @@ import {
 import { home } from "../../data/text";
 import Button from "../../ui/button/Button";
 
-const { title, description, button, image } = home.hero;
+const { description, button, image } = home.hero;
 
 const Hero = () => {
   return (

@@ -140,39 +140,45 @@ export const services = {
   title: "Services We Offer",
   options: [
     {
-      title: "We offer the best fibre optic solutions",
+      title: "Fibre To The Home [FTTH]",
       description:
-        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+        '"Fiber to the Home" (FTTH) is a broadband network architecture that involves deploying fiber-optic cables directly to individual residences or homes. This approach provides high-speed internet connectivity and other digital services with superior speed, capacity, and reliability compared to traditional copper-based connections.',
       button: "Get started",
     },
     {
-      title: "We offer the best fibre optic solutions",
+      title: "Fibre To The Room [FTTR]",
       description:
-        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+        '"Fiber to the Room" (FTTR) is a concept that involves deploying fiber-optic cables directly to individual rooms within a building, typically in a hospitality or commercial setting. This approach is designed to provide high-speed internet connectivity and other services directly to rooms,  for an efficient digital experience.',
       button: "Get started",
     },
     {
-      title: "We offer the best fibre optic solutions",
+      title: "Fibre To The Building [FTTB]",
       description:
-        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+        '"Fiber to the Building" (FTTB) is a broadband network architecture that involves deploying fiber-optic cables to a central point within a multi-dwelling unit (MDU) or commercial building. ',
       button: "Get started",
     },
     {
-      title: "We offer the best fibre optic solutions",
+      title: "Multiple Dwelling Units [MDU]",
       description:
-        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+        '"Multiple Dwelling Units" (MDU) refers to residential or commercial buildings that contain multiple individual living or working spaces within a single structure. ',
       button: "Get started",
     },
     {
-      title: "We offer the best fibre optic solutions",
+      title: "Fibre To The Cabinet [FTTC]",
       description:
-        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+        '"Fiber to the Cabinet" (FTTC) is a broadband network architecture that combines fiber-optic technology with traditional copper or coaxial cables to provide high-speed internet connectivity to homes and businesses. FTTC is a common approach used by telecommunications companies to offer faster internet speeds.',
       button: "Get started",
     },
     {
-      title: "We offer the best fibre optic solutions",
+      title: "Fibre To The Node [FTTN]",
       description:
-        "Our highly trained team have the experience and expertise necessary to complete your project on time, within budget and to your specifications. Our vision is to provide you with the best services for your telecommunication needs.",
+        'Fiber to the Node (FTTN) is a broadband network architecture that combines fiber optic cables with traditional copper cables to deliver high-speed internet connectivity to users. In FTTN deployments, fiber optic cables are extended to a neighborhood or "node," which is a distribution point that serves multiple households.',
+      button: "Get started",
+    },
+    {
+      title: "Wireless To The Home [WTTH]",
+      description:
+        '"Wireless to the Home" (WTTH) refers to a broadband network architecture that provides high-speed internet connectivity to individual residences using wireless technologies. ',
       button: "Get started",
     },
   ],
