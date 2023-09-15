@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Container } from "../style/theme";
+import { Link } from "react-router-dom";
 
 export const CareerContainer = styled(Container)`
   padding: 0;
@@ -72,10 +73,11 @@ export const Border = styled.div`
   opacity: 0.5;
 `;
 
-export const TextField = styled.div`
+export const TextField = styled(Link)`
   display: grid;
   gap: 8px;
   margin-bottom: 18px;
+  cursor: pointer;
 `;
 
 export const JobTitle = styled.h3`

@@ -201,3 +201,7 @@ export const career = {
     },
   ],
 };
+
+export const technician = {
+  title: "Fibre Optic Technician",
+};
