@@ -84,6 +84,7 @@ export const Container = styled.div`
       }
     }
     .duties {
+      margin-bottom: 64px;
       h3 {
         color: #1b1436;
         font-family: "ClashSemiBold";
@@ -94,10 +95,20 @@ export const Container = styled.div`
         margin-bottom: 24px;
       }
 
+      p {
+        color: #6b7280;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%; /* 30px */
+      }
+
       ul {
         display: grid;
         gap: 16px;
         margin-left: 18px;
+        margin-bottom: 30px;
 
         li {
           color: #6b7280;
@@ -106,6 +117,10 @@ export const Container = styled.div`
           font-style: normal;
           font-weight: 300;
           line-height: 24px;
+
+          &::marker {
+            margin-right: 20px;
+          }
         }
       }
     }

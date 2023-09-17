@@ -215,6 +215,8 @@ export const technician = {
     description:
       "In accordance with BOLT Telecommunications Inc. procedures and policies, the employee will be responsible for the splicing, testing, and troubleshooting of newly installed and existing fibre infrastructure. In addition, the employee must be able to understand and decipher fibre splice packages.",
     duties: "Duties Include",
+    dutiesText:
+      "This position description is only meant to be a representative summary of the major duties and responsibilities performed by technicians in this position. The employee may be requested to perform tasks other than those stated in this description, this will always be communicated and agreed ahead of any actionable tasks.",
     dutiesList: [
       "Interpret and understand placing and splicing work plans.",
       "Splice and test fibre optic cables in all outside plant applications – aerial, burial and underground, on both newly placed and existing cables.",
@@ -226,6 +228,21 @@ export const technician = {
       "Clean and maintain tools and equipment.",
       "Perform other duties as requested.",
       "Overtime",
+    ],
+  },
+  qualification: {
+    title: "Qualifications",
+    list: [
+      "Knowledge of fibre and all related tools used in the field.",
+      "Experience with fusion splicers and testing equipment.",
+      "Strong Microsoft Office skills.",
+      "Strong command of the English language, both spoken and written.",
+      "Strong interpersonal skills, able to clearly communicate with internal and external project teams.",
+      "Detail-oriented with solid problem solving and analytical skills.",
+      "Multi-tasking ability; adaptable to changing priorities and deadlines.",
+      "Self-motivated with the ability to take initiative and resolve problems independently; monitors own quality of work.",
+      "Demonstrated commitment to health and safety and willing to receive applicable Health and Safety training as per legislative and job requirements.",
+      "Must have valid G license.",
     ],
   },
 };
