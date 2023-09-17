@@ -22,6 +22,28 @@ export const Container = styled.div`
     .title-wrapper {
       display: grid;
       gap: 16px;
+
+      h4 {
+        color: #1b1436;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 111.111% */
+        letter-spacing: -1px;
+      }
+
+      span {
+        color: #1b1436;
+        font-feature-settings: "clig" off, "liga" off;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px; /* 111.111% */
+        letter-spacing: -1px;
+      }
     }
   }
   .right-div {

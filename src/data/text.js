@@ -204,4 +204,9 @@ export const career = {
 
 export const technician = {
   title: "Fibre Optic Technician",
+  titleOptions: [
+    { title: "Company", description: "Bolt Telecommunications Inc" },
+    { title: "Location", description: "Ontario, Canada" },
+    { title: "Category", description: "Fibre Optic Technician" },
+  ],
 };
