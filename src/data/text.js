@@ -205,8 +205,27 @@ export const career = {
 export const technician = {
   title: "Fibre Optic Technician",
   titleOptions: [
-    { title: "Company", description: "Bolt Telecommunications Inc" },
-    { title: "Location", description: "Ontario, Canada" },
-    { title: "Category", description: "Fibre Optic Technician" },
+    { title: "Company :", description: "Bolt Telecommunications Inc" },
+    { title: "Location :", description: "Ontario, Canada" },
+    { title: "Category :", description: "Fibre Optic Technician" },
   ],
+  job: {
+    title: "Job Description",
+    subTitle: "Overview",
+    description:
+      "In accordance with BOLT Telecommunications Inc. procedures and policies, the employee will be responsible for the splicing, testing, and troubleshooting of newly installed and existing fibre infrastructure. In addition, the employee must be able to understand and decipher fibre splice packages.",
+    duties: "Duties Include",
+    dutiesList: [
+      "Interpret and understand placing and splicing work plans.",
+      "Splice and test fibre optic cables in all outside plant applications – aerial, burial and underground, on both newly placed and existing cables.",
+      "Accurately record and report project progress to the appropriate supervisory person and communicate any issues or expected delays.",
+      "Work outdoors in various conditions to place copper or fibre optic telecommunication cables.",
+      "Locating fibre faults.",
+      "Able to use OTDR for testing and troubleshooting.",
+      "Input project as-built information.",
+      "Clean and maintain tools and equipment.",
+      "Perform other duties as requested.",
+      "Overtime",
+    ],
+  },
 };
