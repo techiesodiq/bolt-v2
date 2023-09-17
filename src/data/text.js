@@ -255,4 +255,19 @@ export const technician = {
       "Installing Fibre connectors.",
     ],
   },
+  competencies: {
+    title: "Competencies",
+    list: [
+      "Client focused.",
+      "Self-motivated.",
+      "Commitment to quality.",
+      "Organizational skills.",
+      "Decision making & Critical thinking.",
+      "Innovative.",
+      "Collaboration.",
+      "Communication.",
+      "Accountability.",
+      "Team Player.",
+    ],
+  },
 };

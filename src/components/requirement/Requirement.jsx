@@ -3,7 +3,8 @@ import { Container } from "./requirement.style";
 import { technician } from "../../data/text";
 
 const Requirement = () => {
-  const { job, title, titleOptions, qualification, knowledge } = technician;
+  const { job, title, titleOptions, qualification, knowledge, competencies } =
+    technician;
   return (
     <Container>
       <div className="left-div">
@@ -43,6 +44,14 @@ const Requirement = () => {
           <h3>{knowledge.title}</h3>
           <ul>
             {knowledge.list.map((list, index) => (
+              <li key={index}>{list}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="duties">
+          <h3>{competencies.title}</h3>
+          <ul>
+            {competencies.list.map((list, index) => (
               <li key={index}>{list}</li>
             ))}
           </ul>
