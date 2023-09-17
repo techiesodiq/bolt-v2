@@ -245,4 +245,14 @@ export const technician = {
       "Must have valid G license.",
     ],
   },
+  knowledge: {
+    title: "Preferred Skills and Knowledge",
+    list: [
+      "Working at heights training.",
+      "First Aid.",
+      "Knowledge of ribbon cable and ribbon splicing.",
+      "Knowledge of fibre termination panels.",
+      "Installing Fibre connectors.",
+    ],
+  },
 };
