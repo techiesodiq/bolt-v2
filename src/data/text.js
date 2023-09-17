@@ -204,6 +204,10 @@ export const career = {
 
 export const technician = {
   title: "Fibre Optic Technician",
+  subText:
+    "BOLT Telecommunications Inc. is an equal opportunity employer and values diversity in our workplace. Reasonable accommodation is available upon request throughout our recruitment and selection process.",
+  right:
+    "BOLT Telecommunications Inc. reserves the right to contact only those candidates who best qualify for this position. If your submission is not selected, we thank you for your application and will retain it for future opportunities. Only Canadian residents who are eligible to work in Canada and reside in Canada at this time will be considered. Non-residents need not apply.",
   titleOptions: [
     { title: "Company :", description: "Bolt Telecommunications Inc" },
     { title: "Location :", description: "Ontario, Canada" },

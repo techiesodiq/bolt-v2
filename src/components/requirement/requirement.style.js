@@ -124,10 +124,31 @@ export const Container = styled.div`
         }
       }
     }
+    h5 {
+      color: #1b1436;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 150%; /* 30px */
+      margin-bottom: 24px;
+    }
   }
   .right-div {
     border-radius: 8px;
     background: #fff;
     box-shadow: 0px 7px 64px 0px rgba(0, 0, 0, 0.07);
   }
+`;
+
+export const FullContainer = styled.div`
+  color: #6b7280;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  max-width: 1248px;
+  /* min-height: 152px; */
+  margin-bottom: 60px;
 `;
