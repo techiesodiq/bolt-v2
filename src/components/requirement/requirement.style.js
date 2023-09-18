@@ -138,7 +138,7 @@ export const Container = styled.div`
     border-radius: 8px;
     background: #fff;
     box-shadow: 0px 7px 64px 0px rgba(0, 0, 0, 0.07);
-    max-width: 296px;
+    max-width: 294px;
     padding-left: 28px;
     padding-right: 28px;
     align-self: flex-start;
@@ -198,6 +198,22 @@ export const Container = styled.div`
         line-height: 20px; /* 111.111% */
         letter-spacing: -1px;
       }
+    }
+    button {
+      border-radius: 6px;
+      display: block;
+      margin: 0 auto;
+      background: #013ebd;
+      padding: 12px 20px;
+      max-width: 151px;
+      width: 100%;
+      color: #fff;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 108px;
     }
   }
 `;

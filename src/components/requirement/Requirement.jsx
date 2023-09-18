@@ -126,6 +126,7 @@ const Requirement = () => {
             ))}
           </ul>
         </div>
+        <button>Apply</button>
       </div>
     </Container>
   );
