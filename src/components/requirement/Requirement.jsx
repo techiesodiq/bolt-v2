@@ -11,6 +11,14 @@ const Requirement = () => {
     qualification,
     knowledge,
     competencies,
+    rTitle,
+    rSubTitle,
+    benefit,
+    experience,
+    flexible,
+    location,
+    pay,
+    schedule,
   } = technician;
   return (
     <Container>
@@ -65,7 +73,60 @@ const Requirement = () => {
         </div>
         <h5>{subText}</h5>
       </div>
-      <div className="right-div"></div>
+      <div className="right-div">
+        <div className="title-wrapper">
+          <h4>{rTitle}</h4>
+          <p>{rSubTitle}</p>
+        </div>
+        <div className="list-wrapper">
+          <h4>{benefit.title}</h4>
+          <ul>
+            {benefit.list.map((list, i) => (
+              <li key={i}>{list}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="list-wrapper">
+          <h4>{flexible.title}</h4>
+          <ul>
+            {flexible.list.map((list, i) => (
+              <li key={i}>{list}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="list-wrapper">
+          <h4>{schedule.title}</h4>
+          <ul>
+            {schedule.list.map((list, i) => (
+              <li key={i}>{list}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="list-wrapper">
+          <h4>{pay.title}</h4>
+          <ul>
+            {pay.list.map((list, i) => (
+              <li key={i}>{list}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="list-wrapper">
+          <h4>{experience.title}</h4>
+          <ul>
+            {experience.list.map((list, i) => (
+              <li key={i}>{list}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="list-wrapper">
+          <h4>{location.title}</h4>
+          <ul>
+            {location.list.map((list, i) => (
+              <li key={i}>{list}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </Container>
   );
 };

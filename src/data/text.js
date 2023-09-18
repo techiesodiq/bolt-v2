@@ -204,6 +204,8 @@ export const career = {
 
 export const technician = {
   title: "Fibre Optic Technician",
+  rTitle: "Job type",
+  rSubTitle: "Full Time",
   subText:
     "BOLT Telecommunications Inc. is an equal opportunity employer and values diversity in our workplace. Reasonable accommodation is available upon request throughout our recruitment and selection process.",
   right:
@@ -273,5 +275,39 @@ export const technician = {
       "Accountability.",
       "Team Player.",
     ],
+  },
+  benefit: {
+    title: "Benefit",
+    list: [
+      "Dental care",
+      "Extended health care",
+      "Life insurance",
+      "RRSP match",
+    ],
+  },
+  flexible: {
+    title: "Flexible Language Requirement:",
+    list: [
+      "Dental care",
+      "Extended health care",
+      "Life insurance",
+      "RRSP match",
+    ],
+  },
+  schedule: {
+    title: "Schedule",
+    list: ["10-hour shift"],
+  },
+  pay: {
+    title: "Supplemental pay types:",
+    list: ["Overtime pay."],
+  },
+  experience: {
+    title: "Experience",
+    list: ["splicing: 2 years (preferred)"],
+  },
+  location: {
+    title: "Work Location: In person",
+    list: ["Expected start date: 29/09/2023"],
   },
 };
