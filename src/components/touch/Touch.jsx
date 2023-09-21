@@ -14,13 +14,29 @@ import { Paragraph, Title } from "../style/theme";
 import data from "../../data/text.json";
 import mail from "../../asset/mail.svg";
 import mobile from "../../asset/phone.svg";
+import { motion } from "framer-motion";
 
 const { title, subtitle, header, address, email, phone } = data.home.contact;
 
 const Touch = () => {
   return (
-    <TouchContainer>
-      <TouchBox>
+    <TouchContainer
+      layout
+      as={motion.div}
+      initial={{ y: "100%", opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1, transition: { duration: 0.8 } }}
+      viewport={{ once: true }}
+    >
+      <TouchBox
+        as={motion.div}
+        intial={{ x: 200, opacity: 0 }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+          transition: { delay: 1, duration: 0.8 },
+        }}
+        viewport={{ once: true }}
+      >
         <Box mmb="10px">
           <TouchPara color="#013EBD" fw="500" fs="16px" mfs="16px" lh="16px">
             {title}

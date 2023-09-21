@@ -21,10 +21,19 @@ import {
 import logo from "../../asset/IMG-20230216-WA0009 1.png";
 import { Link } from "react-router-dom";
 import { footerData } from "../../data/navlist";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <FooterContainer
+      as={motion.div}
+      initial={{ background: "#fff" }}
+      whileInView={{
+        background: "#000",
+        transition: { duration: 2 },
+      }}
+      viewport={{ once: true }}
+    >
       <FooterBox>
         <FooterLogoContainer>
           <FooterImg src={logo} />
