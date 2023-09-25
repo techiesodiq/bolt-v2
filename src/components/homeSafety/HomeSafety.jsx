@@ -13,8 +13,7 @@ import {
 } from "./homesafety.style";
 
 import { home } from "../../data/text.js";
-import { delay, motion } from "framer-motion";
-import { duration } from "@mui/material";
+import { motion } from "framer-motion";
 
 const { image1, image2, options, title } = home.safety;
 const HomeSafety = () => {
@@ -26,7 +25,7 @@ const HomeSafety = () => {
         whileInView={{
           y: 0,
           opacity: 1,
-          transition: { duration: 1.5 },
+          transition: { duration: 1 },
         }}
         viewport={{ once: true }}
       >
@@ -41,7 +40,7 @@ const HomeSafety = () => {
             <TextWrapper
               as={motion.div}
               initial={{ x: "-100%", opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1, transition: { duration: 1.5 } }}
+              whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}
               key={index}
               viewport={{ once: true }}
             >
@@ -57,7 +56,7 @@ const HomeSafety = () => {
             whileInView={{
               x: 0,
               opacity: 1,
-              transition: { delay: 1.5, duration: 2 },
+              transition: { delay: 1, duration: 1 },
             }}
             viewport={{ once: true }}
             src={image1}
@@ -65,11 +64,11 @@ const HomeSafety = () => {
           />
           <ImgGrid
             as={motion.div}
-            initial={{ y: "100%", opacity: 0 }}
+            initial={{ y: "-200", opacity: 0 }}
             whileInView={{
               y: 0,
               opacity: 1,
-              transition: { delay: 0.5, duration: 2 },
+              transition: { delay: 0.5, duration: 1.5 },
             }}
             viewport={{ once: true }}
           >
