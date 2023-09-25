@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 // import map from "../../asset/worldMap.png";
 // import story from "../../asset/story.png";
 import {
@@ -18,12 +19,30 @@ const Story = () => {
   return (
     <AboutContainer>
       <AboutBox>
-        <Title>
+        <Title
+          as={motion.h2}
+          initial={{ y: "-150%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+        >
           {brighter[0]} <span style={{ color: "#013EBD" }}>brighter</span>{" "}
           {brighter[1]}
         </Title>
-        <ParagraphBox>
-          <Paragraph>{paragraph}</Paragraph>
+        <ParagraphBox
+          as={motion.div}
+          initial={{ y: "-150%", backgroundColor: "#363131" }}
+          animate={{
+            y: 0,
+            backgroundColor: "#fffdf6",
+            transition: { duration: 1 },
+          }}
+        >
+          <Paragraph
+            as={motion.div}
+            initial={{ x: "-120%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1, transition: { duration: 1 } }}
+          >
+            {paragraph}
+          </Paragraph>
         </ParagraphBox>
       </AboutBox>
       {/* <MobileAbout>
