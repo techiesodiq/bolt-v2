@@ -34,7 +34,7 @@ const Career = () => {
       <MarginBottom>
         {options.map((option, index) => (
           <JobBox>
-            <TextField key={index}>
+            <TextField key={index} to="/career/requirement">
               <JobTitle>{option.title}</JobTitle>
               <JobText>{option.description}</JobText>
             </TextField>

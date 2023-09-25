@@ -53,7 +53,7 @@
       "button": "Contact Us",
       "address": {
         "title": "Address",
-        "officeAddress": "88 Speedwell Street Brampton Ontario, L6X 0R8"
+        "officeAddress": "1225 Kennedy Road, Suite 2000 Scarborough, ON M1P 4Y1"
       },
       "email": {
         "title": "Email",
@@ -136,7 +136,7 @@
     },
     "address": {
       "title": "Address",
-      "officeAddress": "88 Speedwell Street Brampton Ontario, L6X 0R8",
+      "officeAddress": "1225 Kennedy Road, Suite 2000 Scarborough, ON M1P 4Y1",
       "description": "Lorem ipsum dolor sit amet consectetur. Sed nisl."
     },
     "email": {

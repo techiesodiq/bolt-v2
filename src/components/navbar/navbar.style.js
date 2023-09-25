@@ -78,7 +78,6 @@ export const NavListLink = styled(NavLink)`
   &.active {
     color: ${({ theme }) => theme.bgColor.primary};
     font-weight: ${({ theme }) => theme.fontWeight.header};
-    border-bottom: 2px solid ${({ theme }) => theme.bgColor.primary};
   }
 
   &:hover {

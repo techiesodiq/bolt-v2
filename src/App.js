@@ -19,7 +19,8 @@ function App() {
         { path: "about", element: <About /> },
         { path: "service", element: <Service /> },
         { path: "contact", element: <Contact /> },
-        { path: "safety", element: <Technician /> },
+        { path: "career", element: <Safety /> },
+        { path: "/career/requirement", element: <Technician /> },
       ],
     },
   ]);
