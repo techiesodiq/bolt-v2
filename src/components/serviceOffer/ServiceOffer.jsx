@@ -33,7 +33,7 @@ const ServiceOffer = () => {
             whileInView={{
               x: 0,
               opacity: 1,
-              transition: { duration: 0.8, delay: index % 2 === 0 ? 0 : 1 },
+              transition: { duration: 0.8, delay: index % 2 === 0 ? 0 : 0.4 },
             }}
             viewport={{ once: true }}
           >
