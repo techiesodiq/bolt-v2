@@ -113,7 +113,7 @@ const Mission = () => {
           >
             <ReviewImg src={customerReview} />
             <ReviewTextCard>
-              <ReviewTitle>Peole</ReviewTitle>
+              <ReviewTitle>People</ReviewTitle>
               <ReviewText>{description}</ReviewText>
             </ReviewTextCard>
           </ReviewCard>
