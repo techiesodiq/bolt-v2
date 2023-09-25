@@ -9,12 +9,21 @@ import {
   FormButton,
 } from "./form.style";
 import data from "../../data/text.json";
+import { motion } from "framer-motion";
 
 const { button, email, message, name, number } = data.contact.form;
 
 const Form = () => {
   return (
-    <FormWrapper>
+    <FormWrapper
+      as={motion.form}
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+        transition: { duration: 1.5, delay: 0.5 },
+      }}
+      viewport={{ once: true }}
+    >
       <StyledForm>
         <FormBox>
           <FormLabel htmlFor={name.label}>{name.label}</FormLabel>

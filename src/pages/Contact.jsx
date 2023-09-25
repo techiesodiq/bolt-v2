@@ -9,6 +9,7 @@ import {
 } from "../components/contactTouch/contactTouch.style";
 import ContactInfo from "../components/contactInfo/ContactInfo";
 import Form from "../components/form/Form";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -17,7 +18,17 @@ const Contact = () => {
         <ContactTouch />
         <Form />
         <ImgContainer>
-          <ContactImg src={contactImg} />
+          <ContactImg
+            src={contactImg}
+            as={motion.img}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 1 },
+            }}
+            viewport={{ once: true }}
+          />
         </ImgContainer>
         <ContactInfo />
       </ContactContainer>
