@@ -7,8 +7,8 @@ export const navData = [
 ];
 
 export const footerData = [
-  { id: "about", title: "About", path: "about" },
-  { id: "contact", title: "Contact", path: "contact" },
+  { id: "about", title: "About", path: "/about" },
+  { id: "contact", title: "Contact", path: "/contact" },
   { id: "service", title: "Health & Service", path: "service" },
   { id: "policy", title: "Private Policy", path: "policy" },
 ];

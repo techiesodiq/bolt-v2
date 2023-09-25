@@ -78,6 +78,8 @@ export const TextField = styled(Link)`
   gap: 8px;
   margin-bottom: 18px;
   cursor: pointer;
+  color: #42526e;
+  text-decoration: none;
 `;
 
 export const JobTitle = styled.h3`

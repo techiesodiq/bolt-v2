@@ -13,7 +13,6 @@ import {
 import logo from "../../asset/IMG-20230216-WA0009 1.png";
 import { navData } from "../../data/navlist";
 import { motion } from "framer-motion";
-import { duration } from "@mui/material";
 
 const Navbar = () => {
   const [close, setClose] = useState(false);

@@ -50,6 +50,7 @@ const Career = () => {
       <ImgWrapper>
         {img.map((item, index) => (
           <Image
+            key={index}
             src={item}
             alt="fun"
             as={motion.img}

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { Container } from "../style/theme";
+import { Link } from "react-router-dom";
 
 export const HeroContainer = styled(Container)`
   position: relative;
-  background: linear-gradient(180deg, #eaf1ff 0%, rgba(255, 254, 250, 0) 100%);
+  /* background: linear-gradient(180deg, #eaf1ff 0%, rgba(255, 254, 250, 0) 100%); */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
@@ -76,5 +77,25 @@ export const HeroImage = styled.img`
   @media screen and (max-width: 768px) {
     border-radius: 0;
     position: relative;
+  }
+`;
+
+export const Button = styled(Link)`
+  display: inline-block;
+  border-radius: 4px;
+  background: ${({ theme }) => theme.bgColor.primary};
+  padding: 12px 53px;
+  font-size: ${({ theme }) => theme.fontSize.button};
+  color: #fff;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: ${({ theme }) => theme.bgColor.primary};
+    border: 2px solid ${({ theme }) => theme.bgColor.primary};
   }
 `;

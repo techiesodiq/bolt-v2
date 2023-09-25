@@ -8,13 +8,13 @@ import {
   TouchPara,
   TouchTitle,
 } from "./touch.style";
-import Button from "../../ui/button/Button";
 import map from "../../asset/map-pin.svg";
 import { Paragraph, Title } from "../style/theme";
 import data from "../../data/text.json";
 import mail from "../../asset/mail.svg";
 import mobile from "../../asset/phone.svg";
 import { motion } from "framer-motion";
+import { Button } from "../hero/hero.style";
 
 const { title, subtitle, header, address, email, phone } = data.home.contact;
 
@@ -49,7 +49,7 @@ const Touch = () => {
           <TouchPara>{subtitle}</TouchPara>
         </Box>
         <Box display="none">
-          <Button>Contact Us</Button>
+          <Button to="/contact">Contact Us</Button>
         </Box>
       </TouchBox>
       <RightContainer>
