@@ -74,7 +74,7 @@ export const MissionBox = styled.div`
 export const BorderBottom = styled.div`
   width: 84px;
   height: 2px;
-  background: #000;
+  background: #013ebd;
 `;
 
 export const ImgWrapper = styled.div`

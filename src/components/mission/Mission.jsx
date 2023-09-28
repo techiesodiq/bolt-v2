@@ -42,7 +42,7 @@ const Mission = () => {
             viewport={{ once: true }}
           >
             <MissionTitle>{mission.title}</MissionTitle>
-            <BorderBottom />
+            {/* <BorderBottom /> */}
             <MissionDescription>{mission.description}</MissionDescription>
           </MissionBox>
           <ImgWrapper>
@@ -90,7 +90,7 @@ const Mission = () => {
             viewport={{ once: true }}
           >
             <MissionTitle>{vision.title}</MissionTitle>
-            <BorderBottom />
+            {/* <BorderBottom /> */}
             <MissionDescription>{vision.description}</MissionDescription>
           </MissionBox>
         </VisionContainer>
