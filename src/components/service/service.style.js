@@ -63,8 +63,10 @@ export const ServiceCard = styled.div`
   background: #fff;
   max-width: 297px;
   padding: 16px;
+  border-radius: 5px;
   /* min-height: 327px; */
   height: 100%;
+  box-shadow: 10px 0px 10px 0px rgba(206, 206, 206, 0.25);
 
   @media screen and (max-width: 640px) {
     width: 100%;

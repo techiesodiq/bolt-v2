@@ -35,7 +35,7 @@ export const Paragraph = styled.p`
   text-align: center;
   font-family: Inter;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 150%; /* 30px */
 `;
 

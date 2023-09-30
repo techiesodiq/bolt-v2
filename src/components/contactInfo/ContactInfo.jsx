@@ -31,7 +31,6 @@ const ContactInfo = () => {
         <InfoImg src={map} />
         <InfoTitle>{address.title}</InfoTitle>
         <InfoAddress>{address.officeAddress}</InfoAddress>
-        <InfoDescription>{address.description}</InfoDescription>
       </InfoBox>
       <InfoBox
         as={motion.div}
@@ -46,7 +45,6 @@ const ContactInfo = () => {
         <InfoImg src={mail} />
         <InfoTitle>{email.title}</InfoTitle>
         <InfoAddress>{email.emailAddress}</InfoAddress>
-        <InfoDescription>{email.description}</InfoDescription>
       </InfoBox>
       <InfoBox
         as={motion.div}
@@ -61,7 +59,6 @@ const ContactInfo = () => {
         <InfoImg src={mobile} />
         <InfoTitle>{phone.title}</InfoTitle>
         <InfoAddress>{phone.phoneNumber}</InfoAddress>
-        <InfoDescription>{phone.description}</InfoDescription>
       </InfoBox>
     </InfoContainer>
   );

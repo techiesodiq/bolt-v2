@@ -75,6 +75,7 @@ export const BorderBottom = styled.div`
   width: 84px;
   height: 2px;
   background: #013ebd;
+  margin-bottom: 39px;
 `;
 
 export const ImgWrapper = styled.div`
@@ -126,8 +127,8 @@ export const ValueDescription = styled.p`
 `;
 
 export const ReviewContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 63px;
   justify-content: flex-start;
   margin-top: 122px;
@@ -148,8 +149,7 @@ export const ReviewCard = styled.div`
   flex-wrap: wrap;
   padding: 48px 0 65px 36px;
   /* max-height: 410px; */
-  max-width: 374px;
-  min-width: 200px;
+
   box-shadow: 10px 0px 10px 0px rgba(206, 206, 206, 0.25);
   border-radius: 5px;
   justify-content: flex-start;

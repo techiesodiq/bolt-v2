@@ -23,11 +23,9 @@ import {
   VisionContainer,
 } from "./mission.style";
 import { AboutContainer } from "../story/story.style";
-import data from "../../data/text.json";
 import { motion } from "framer-motion";
 
 const { mission, vision, value } = about;
-const { description } = data.about.review;
 
 const Mission = () => {
   return (
@@ -42,7 +40,7 @@ const Mission = () => {
             viewport={{ once: true }}
           >
             <MissionTitle>{mission.title}</MissionTitle>
-            {/* <BorderBottom /> */}
+            <BorderBottom />
             <MissionDescription>{mission.description}</MissionDescription>
           </MissionBox>
           <ImgWrapper>
@@ -90,7 +88,7 @@ const Mission = () => {
             viewport={{ once: true }}
           >
             <MissionTitle>{vision.title}</MissionTitle>
-            {/* <BorderBottom /> */}
+            <BorderBottom />
             <MissionDescription>{vision.description}</MissionDescription>
           </MissionBox>
         </VisionContainer>
@@ -114,7 +112,11 @@ const Mission = () => {
             <ReviewImg src={customerReview} />
             <ReviewTextCard>
               <ReviewTitle>People</ReviewTitle>
-              <ReviewText>{description}</ReviewText>
+              <ReviewText>
+                People are our most valuable core value, fostering a culture of
+                respect, empowerment, and continuous growth within our
+                organization.
+              </ReviewText>
             </ReviewTextCard>
           </ReviewCard>
           <ReviewCard
@@ -130,7 +132,10 @@ const Mission = () => {
             <ReviewImg src={collaboration} />
             <ReviewTextCard>
               <ReviewTitle>Safety</ReviewTitle>
-              <ReviewText>{description}</ReviewText>
+              <ReviewText>
+                ensuring the well-being of our employees, customers, and the
+                communities we serve is paramount for us.
+              </ReviewText>
             </ReviewTextCard>
           </ReviewCard>
           <ReviewCard
@@ -146,7 +151,10 @@ const Mission = () => {
             <ReviewImg src={vector} />
             <ReviewTextCard>
               <ReviewTitle>Innovation</ReviewTitle>
-              <ReviewText>{description}</ReviewText>
+              <ReviewText>
+                guiding us to uphold honesty, transparency, and ethical conduct
+                in all our endeavours.
+              </ReviewText>
             </ReviewTextCard>
           </ReviewCard>
         </ReviewContainer>

@@ -38,9 +38,9 @@ export const InfoImg = styled.img`
 export const InfoTitle = styled.h3`
   color: #101828;
   font-size: 20px;
-  font-weight: 600;
   line-height: 30px;
   margin-bottom: 8px;
+  font-family: "ClashSemiBold";
 `;
 
 export const InfoAddress = styled.p`
@@ -49,6 +49,8 @@ export const InfoAddress = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  font-weight: 600;
+  color: #013ebd;
 `;
 
 export const InfoDescription = styled.p`
