@@ -75,10 +75,12 @@ export const TouchDescription = styled.p`
 `;
 export const ImgContainer = styled(Container)`
   display: block;
+  margin: 0 auto;
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 export const ContactImg = styled.img`
   max-width: 100%;
+  margin: 0 auto;
 `;
