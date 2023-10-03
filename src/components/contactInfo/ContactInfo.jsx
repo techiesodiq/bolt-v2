@@ -24,7 +24,7 @@ const ContactInfo = () => {
         whileInView={{
           x: 0,
           opacity: 1,
-          transition: { duration: 1 },
+          transition: { duration: 0.7 },
         }}
         viewport={{ once: true }}
       >
@@ -38,7 +38,7 @@ const ContactInfo = () => {
         whileInView={{
           x: 0,
           opacity: 1,
-          transition: { duration: 1, delay: 0.7 },
+          transition: { duration: 0.7, delay: 0.3 },
         }}
         viewport={{ once: true }}
       >
@@ -48,11 +48,11 @@ const ContactInfo = () => {
       </InfoBox>
       <InfoBox
         as={motion.div}
-        initial={{ x: "100%", opacity: 0 }}
+        initial={{ x: "-50%", opacity: 0 }}
         whileInView={{
           x: 0,
           opacity: 1,
-          transition: { duration: 1, delay: 1.4 },
+          transition: { duration: 0.7, delay: 0.6 },
         }}
         viewport={{ once: true }}
       >
