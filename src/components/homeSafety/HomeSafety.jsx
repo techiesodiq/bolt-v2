@@ -15,7 +15,7 @@ import {
 import { home } from "../../data/text.js";
 import { motion } from "framer-motion";
 
-const { image1, image2, options, title } = home.safety;
+const { image1, image2, image3, options, title } = home.safety;
 const HomeSafety = () => {
   return (
     <SafetyContainer>
@@ -73,7 +73,7 @@ const HomeSafety = () => {
             viewport={{ once: true }}
           >
             <SafetyKitImg src={image2} alt="safetykit" />
-            <SafetyKitImg src={image2} alt="safetykit" />
+            <SafetyKitImg src={image3} alt="safetykit" />
           </ImgGrid>
         </RightBox>
       </SafetyWrapper>

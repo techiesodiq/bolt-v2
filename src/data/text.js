@@ -20,56 +20,33 @@ export const home = {
         title: "Fibre To The Home (FTTH)",
         description:
           "FTTH is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings.",
-        image: require("../asset/unsplash_X6dGWWcSdds.png"),
+        image: require("../asset/Ftth.png"),
       },
       {
         title: "Fibre To The Room (FTTR)",
         description:
           "FTTR is often implemented in large buildings or multi-dwelling units (MDUs) where there is a high demand for high-speed internet access for each individual room or unit.",
-        image: require("../asset/unsplash_X6dGWWcSdds.png"),
+        image: require("../asset/fttr.png"),
       },
       {
         title: "Fibre To The Building (FTTB)",
         description:
           "FTTH fiber optic cables are extended up to the building's telecommunication room or distribution point, typically located in the basement or a central location within the building.",
-        image: require("../asset/unsplash_X6dGWWcSdds.png"),
+        image: require("../asset/fttb.png"),
       },
       {
         title: "Multi-Dwelling Units (MDU)",
         description:
           "The fiber access point is usually outside the building, which is suitable for each household to use a separate fiber.",
-        image: require("../asset/unsplash_X6dGWWcSdds.png"),
-      },
-      {
-        title: "Fibre To The Home (FTTH)",
-        description:
-          "FTTH is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings.",
-        image: require("../asset/unsplash_X6dGWWcSdds.png"),
-      },
-      {
-        title: "Fibre To The Room (FTTR)",
-        description:
-          "FTTR is often implemented in large buildings or multi-dwelling units (MDUs) where there is a high demand for high-speed internet access for each individual room or unit.",
-        image: require("../asset/unsplash_X6dGWWcSdds.png"),
-      },
-      {
-        title: "Fibre To The Home (FTTB)",
-        description:
-          "FTTH is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings.",
-        image: require("../asset/unsplash_X6dGWWcSdds.png"),
-      },
-      {
-        title: "Fibre To The Home",
-        description:
-          "FTTH is a high-speed broadband internet service that utilizes optical fiber cable to provide internet connectivity directly to individual homes or buildings.",
-        image: require("../asset/unsplash_X6dGWWcSdds.png"),
+        image: require("../asset/mdu.png"),
       },
     ],
   },
   safety: {
     title: "Health and Safety",
     image1: require("../asset/helment.png"),
-    image2: require("../asset/dark_Element.png"),
+    image2: require("../asset/safety_first.png"),
+    image3: require("../asset/reading.png"),
     options: [
       {
         title: "We Are Safety Conscious",
