@@ -12,6 +12,7 @@ export const NavContainer = styled.nav`
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 0.5px solid #013ebd;
 
   @media screen and (max-width: 768px) {
     padding: 20px 0;

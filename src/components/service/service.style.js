@@ -128,3 +128,24 @@ export const MediaImage = styled.img`
     width: 100%;
   }
 `;
+
+export const ButtomButton = styled.div`
+  color: #013ebd;
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+
+  & p {
+    display: flex;
+    align-items: center;
+    font-family: "ClashMedium";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    & span {
+      margin-left: 6px;
+      margin-top: 2px;
+    }
+  }
+`;

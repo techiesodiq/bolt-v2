@@ -42,7 +42,7 @@ export const TouchTitle = styled.h1`
   font-size: ${({ fs }) => (fs ? fs : "48px")};
   line-height: ${({ lh }) => (lh ? lh : "72px")};
   letter-spacing: -0.02em;
-  color: #101828;
+  color: #013ebd;
 
   @media screen and (max-width: 768px) {
     font-weight: ${({ mfw }) => (mfw ? mfw : "600")};

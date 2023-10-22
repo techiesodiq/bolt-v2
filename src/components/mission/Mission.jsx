@@ -64,14 +64,14 @@ const Mission = () => {
         <VisionContainer>
           <ImgWrapper style={{ justifyContent: "start" }}>
             <Image
-              src={mission.studyImg}
+              src={vision.studyImg}
               as={motion.img}
               initial={{ y: "-100%", opacity: 0 }}
               whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true }}
             />
             <Image
-              src={mission.shakeImg}
+              src={vision.shakeImg}
               style={{ position: "relative", top: -100 }}
               as={motion.img}
               initial={{ y: "100%", opacity: 0 }}

@@ -43,10 +43,12 @@ const Touch = () => {
           </TouchPara>
         </Box>
         <Box>
-          <TouchTitle>{header}</TouchTitle>
+          <TouchTitle fs="36px" style={{ fontFamily: "ClashRegular" }}>
+            {header}
+          </TouchTitle>
         </Box>
         <Box mb="10px" mmb="32px">
-          <TouchPara>{subtitle}</TouchPara>
+          <TouchPara color="#013EBD">{subtitle}</TouchPara>
         </Box>
         <Box display="none">
           <Button to="/contact">Contact Us</Button>
