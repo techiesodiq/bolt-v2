@@ -75,7 +75,7 @@ export const about = {
     title: "Our Mission",
     description:
       "Our mission is to serve our clients needs by delivering budget-friendly network builds of the highest industry standards ahead of deadlines.",
-    studyImg: require("../asset/study.png"),
+    studyImg: require("../asset/caliberate.png"),
     shakeImg: require("../asset/pillar.png"),
   },
   vision: {
@@ -83,7 +83,7 @@ export const about = {
     description:
       "Our vision for BOLT Telecommunications is to establish a global fibre optic splicing company of the highest industry standards.",
     studyImg: require("../asset/binocular.png"),
-    shakeImg: require("../asset/shake.png"),
+    shakeImg: require("../asset/target.png"),
   },
   value: {
     title: "Our Core Values",
