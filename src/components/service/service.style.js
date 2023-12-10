@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { Container } from "../style/theme";
+import { Link } from "react-router-dom";
 
 export const ServiceContainer = styled(Container)`
   /* position: relative; */
@@ -129,7 +130,7 @@ export const MediaImage = styled.img`
   }
 `;
 
-export const ButtomButton = styled.div`
+export const ButtomButton = styled(Link)`
   color: #013ebd;
   margin-top: 34px;
   display: flex;
